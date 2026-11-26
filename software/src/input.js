@@ -1,4 +1,6 @@
-// Keyboard + gamepad input for one player. No mouse controls (spec section 14).
+// Keyboard + gamepad input for one player, plus the on-screen touch controls
+// for player 1 (touch.js). No mouse controls (spec section 14).
+import { TOUCH } from './touch.js';
 // Default keys per player and action: up to two keys each (Phaser key names).
 export const DEFAULT_KEYMAPS = [
   // P1: WASD + F G H, R block
@@ -90,6 +92,7 @@ export class PlayerInput {
       s.heavy = s.heavy || p.Y;                         // Y = heavy strike
       s.block = s.block || p.L1 > 0 || p.R1 > 0;        // bumpers = block
     }
+    if (this.index === 0 && TOUCH.enabled) for (const b of BUTTONS) s[b] = s[b] || TOUCH.state[b];
     for (const b of BUTTONS) {
       this.pressed[b] = s[b] && !this.prev[b];
       this.prev[b] = s[b];

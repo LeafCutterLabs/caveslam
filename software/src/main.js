@@ -8,6 +8,7 @@ import { FightScene } from './scenes/FightScene.js';
 import { ResultScene } from './scenes/ResultScene.js';
 import { InspectScene } from './scenes/InspectScene.js';
 import { SettingsScene } from './scenes/SettingsScene.js';
+import { TouchScene } from './touch.js';
 
 const game = new Phaser.Game({
   type: Phaser.AUTO,
@@ -18,7 +19,7 @@ const game = new Phaser.Game({
   pixelArt: false,
   antialias: true,
   scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
-  input: { gamepad: true },
+  input: { gamepad: true, activePointers: 5 },
   scene: [],
 });
 game.registry.set('showLabels', false);  // true = print the action name on placeholder frames
@@ -30,4 +31,5 @@ discoverAssets().then((discovery) => {
   for (const [k, S] of [['Title', TitleScene], ['Select', SelectScene], ['Vs', VsScene], ['Fight', FightScene], ['Result', ResultScene], ['Settings', SettingsScene]]) game.scene.add(k, S, false);
   game.scene.add('Inspect', InspectScene, false);
   game.scene.add('Boot', BootScene, true);
+  game.scene.add('Touch', TouchScene, true);  // on-screen controls, always on top
 });

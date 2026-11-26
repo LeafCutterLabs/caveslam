@@ -1,11 +1,12 @@
 import { W, H } from '../config.js';
-import { MenuInput, TITLE_FONT, BODY, background, getKing } from './common.js';
+import { MenuInput, TITLE_FONT, BODY, background, getKing, getCpuLevel, setCpuLevel } from './common.js';
 import { CHARACTERS } from '../config.js';
 import { BUTTONS, loadBindings, keyLabel } from '../input.js';
 
-const ITEMS = ['2 PLAYER FIGHT', 'PRACTICE', 'SETTINGS: KEYS', 'FRAME INSPECTOR', 'CONTROLS'];
+const ITEMS = ['1 PLAYER VS CPU', '2 PLAYER FIGHT', 'PRACTICE', 'SETTINGS: KEYS', 'FRAME INSPECTOR', 'CONTROLS'];
+const LEVELS = ['easy', 'normal', 'hard'];
 const TIPS = [
-  'Double-tap forward (and hold) to run.',
+  'Double-tap forward (and hold) to run.  1 PLAYER: left/right on the menu picks CPU difficulty.',
   'Grab near opponent: lock-up. Press GRAB again when the ring closes.',
   '  Hold forward = signature slam, back = slam behind / 2nd signature,',
   '  down = roll-up pin, nothing = body slam. Perfect press as defender = REVERSAL.',
@@ -34,7 +35,8 @@ export class TitleScene extends Phaser.Scene {
     else this.add.text(W / 2, 130, 'CAVE SLAM', { ...TITLE_FONT, fontFamily: 'Impact, Arial Black, sans-serif', fontSize: '96px', fontStyle: 'bold' }).setOrigin(0.5);
     const king = getKing();
     if (king) this.add.text(W / 2, 222, `The ${CHARACTERS[king].name} tribe rules the cave`, { ...BODY, color: '#ffcf5a' }).setOrigin(0.5);
-    this.items = ITEMS.map((t, i) => this.add.text(W / 2, 280 + i * 40, t, { ...BODY, font: 'bold 24px monospace' }).setOrigin(0.5));
+    this.level = getCpuLevel();
+    this.items = ITEMS.map((t, i) => this.add.text(W / 2, 268 + i * 37, t, { ...BODY, font: 'bold 24px monospace' }).setOrigin(0.5));
     this.sel = 0;
     const cov = art.countExpected();
     this.add.text(10, H - 8, `Art found: ${cov.have}/${cov.total} files. Missing frames use placeholders; press F5 after new art lands.`, { ...BODY, font: '12px monospace' }).setOrigin(0, 1);
@@ -46,21 +48,27 @@ export class TitleScene extends Phaser.Scene {
     this.menu = new MenuInput(this);
     this.refresh();
   }
-  refresh() { this.items.forEach((t, i) => t.setColor(i === this.sel ? '#ffcf5a' : '#c9a98a').setText((i === this.sel ? '> ' : '  ') + ITEMS[i] + (i === this.sel ? ' <' : '  '))); }
+  label(i) { return i === 0 ? `1 PLAYER VS CPU (${this.level.toUpperCase()})` : ITEMS[i]; }
+  refresh() { this.items.forEach((t, i) => t.setColor(i === this.sel ? '#ffcf5a' : '#c9a98a').setText((i === this.sel ? '> ' : '  ') + this.label(i) + (i === this.sel ? ' <' : '  '))); }
   update() {
     const m = this.menu; m.update();
     if (this.controls.visible) { if (m.any() && this.time.now > this.shownAt + 250) this.controls.setVisible(false); return; }
     for (const i of [0, 1]) {
       if (m.pressed(i, 'up')) { this.sel = (this.sel + ITEMS.length - 1) % ITEMS.length; this.refresh(); }
       if (m.pressed(i, 'down')) { this.sel = (this.sel + 1) % ITEMS.length; this.refresh(); }
+      if (this.sel === 0 && (m.pressed(i, 'left') || m.pressed(i, 'right'))) {
+        const d = m.pressed(i, 'left') ? 2 : 1;
+        this.level = LEVELS[(LEVELS.indexOf(this.level) + d) % 3]; setCpuLevel(this.level); this.refresh();
+      }
       if (m.confirm(i)) return this.choose();
     }
   }
   choose() {
-    if (this.sel === 0) this.scene.start('Select', { practice: false });
-    else if (this.sel === 1) this.scene.start('Select', { practice: true });
-    else if (this.sel === 2) this.scene.start('Settings');
-    else if (this.sel === 3) { this.scene.pause(); this.scene.launch('Inspect', { cid: 'goblin', returnTo: 'Title' }); }
+    if (this.sel === 0) this.scene.start('Select', { practice: false, cpu: this.level });
+    else if (this.sel === 1) this.scene.start('Select', { practice: false });
+    else if (this.sel === 2) this.scene.start('Select', { practice: true });
+    else if (this.sel === 3) this.scene.start('Settings');
+    else if (this.sel === 4) { this.scene.pause(); this.scene.launch('Inspect', { cid: 'goblin', returnTo: 'Title' }); }
     else { this.controls.setVisible(true); this.shownAt = this.time.now; }
   }
 }

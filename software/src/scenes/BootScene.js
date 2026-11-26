@@ -22,7 +22,7 @@ export class BootScene extends Phaser.Scene {
     this.registry.set('art', art);
     buildAnimations(this, art);
     const q = new URLSearchParams(location.search);
-    if (q.get('p1') || q.get('practice') !== null) this.scene.start('Fight', { p1: q.get('p1') || 'goblin', p2: q.get('p2') || 'dwarf', practice: q.get('practice') !== null });
+    if (q.get('p1') || q.get('practice') !== null) this.scene.start('Fight', { p1: q.get('p1') || 'goblin', p2: q.get('p2') || 'dwarf', practice: q.get('practice') !== null, cpu: q.get('cpu') || null });
     else this.scene.start('Title');
   }
 }

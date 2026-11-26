@@ -2,6 +2,7 @@
 import { W, H, FLOOR_Y, TUNING, CHARACTERS, PLAYER_COLORS } from '../config.js';
 import { Fighter } from '../fighter.js';
 import { PlayerInput } from '../input.js';
+import { CpuInput } from '../cpu.js';
 import { GrappleManager } from '../grapple.js';
 import { CaveEvents } from '../events.js';
 import { Stage } from '../stage.js';
@@ -17,6 +18,7 @@ export class FightScene extends Phaser.Scene {
   init(data) {
     this.cids = [data.p1 || 'goblin', data.p2 || 'dwarf'];
     this.practice = !!data.practice;
+    this.cpu = data.cpu || null;   // CPU difficulty for player 2, or null
   }
 
   create() {
@@ -26,7 +28,7 @@ export class FightScene extends Phaser.Scene {
       new Fighter(this, this.cids[0], 300, 1, 0),
       new Fighter(this, this.cids[1], W - 300, -1, 1),
     ];
-    this.inputs = [new PlayerInput(this, 0), new PlayerInput(this, 1)];
+    this.inputs = [new PlayerInput(this, 0), this.cpu ? new CpuInput(this, 1, this.cpu) : new PlayerInput(this, 1)];
     this.grapple = new GrappleManager(this);
     this.caveEvents = new CaveEvents(this);
     this.wins = [0, 0];
@@ -124,7 +126,7 @@ export class FightScene extends Phaser.Scene {
       const icon = art.getAny(`${f.cid}_portrait_icon`);
       const ix = left ? x + 24 : x - 24;
       if (icon) o.icon = this.add.image(ix, 64, icon.key, icon.frame).setDisplaySize(44, 44).setDepth(91).setFlipX(!left);
-      o.name = this.add.text(left ? x + 52 : x - 52, 50, `P${i + 1} ${f.def.name}`, { ...TXT, color: i ? '#9fe870' : '#ff9a52' }).setOrigin(left ? 0 : 1, 0).setDepth(91);
+      o.name = this.add.text(left ? x + 52 : x - 52, 50, `${i && this.cpu ? 'CPU' : `P${i + 1}`} ${f.def.name}`, { ...TXT, color: i ? '#9fe870' : '#ff9a52' }).setOrigin(left ? 0 : 1, 0).setDepth(91);
       const frame = art.getAny('ui_healthbar_frame');
       if (frame) o.frame = this.add.image(left ? x : x, 24, frame.key, frame.frame).setOrigin(left ? 0 : 1, 0.5).setDepth(92).setFlipX(!left).setScale(0.95);
       const fill = art.getAny('ui_healthbar_fill'); const fillLow = art.getAny('ui_healthbar_fill-low');
@@ -135,9 +137,9 @@ export class FightScene extends Phaser.Scene {
     const tf = art.getAny('ui_timer_frame');
     if (tf) this.add.image(W / 2, 30, tf.key, tf.frame).setDepth(91);
     this.tags = this.fighters.map((f, i) => {
-      const tg = art.getAny(`ui_tag-p${i + 1}`);
+      const tg = i && this.cpu ? null : art.getAny(`ui_tag-p${i + 1}`);
       return tg ? this.add.image(0, 0, tg.key, tg.frame).setDepth(30)
-        : this.add.text(0, 0, `P${i + 1}`, { ...TXT, color: i ? '#9fe870' : '#ff9a52' }).setOrigin(0.5).setDepth(30);
+        : this.add.text(0, 0, i && this.cpu ? 'CPU' : `P${i + 1}`, { ...TXT, color: i ? '#9fe870' : '#ff9a52' }).setOrigin(0.5).setDepth(30);
     });
     if (this.practice) {
       this.add.text(W / 2, H - 6, 'PRACTICE  E random event (1 cave-in, 2 spider, 3 oil)  B hitboxes  I frame inspector  Esc pause/quit', { font: '12px monospace', color: '#f7dab5', stroke: '#3a2018', strokeThickness: 3 }).setOrigin(0.5, 1).setDepth(92);
@@ -244,7 +246,7 @@ export class FightScene extends Phaser.Scene {
     this.time.delayedCall(2300, () => {
       const champ = this.wins.findIndex((w) => w >= TUNING.roundsToWin);
       if (champ >= 0) {
-        this.scene.start('Result', { winner: this.cids[champ], loser: this.cids[1 - champ], winnerIdx: champ, p1: this.cids[0], p2: this.cids[1] });
+        this.scene.start('Result', { winner: this.cids[champ], loser: this.cids[1 - champ], winnerIdx: champ, p1: this.cids[0], p2: this.cids[1], cpu: this.cpu });
         return;
       }
       this.round++;
@@ -257,7 +259,7 @@ export class FightScene extends Phaser.Scene {
     if (this.paused) {
       this.pauseBox = this.add.container(0, 0, [
         this.add.rectangle(0, 0, W, H, 0x000000, 0.6).setOrigin(0),
-        this.add.text(W / 2, H / 2, 'PAUSED\n\nEsc  resume\nQ    quit to title', { font: 'bold 22px monospace', color: '#f7dab5', align: 'center', stroke: '#3a2018', strokeThickness: 5 }).setOrigin(0.5),
+        this.add.text(W / 2, H / 2, 'PAUSED\n\nEsc or II  resume\nQ          quit to title', { font: 'bold 22px monospace', color: '#f7dab5', align: 'center', stroke: '#3a2018', strokeThickness: 5 }).setOrigin(0.5),
       ]).setDepth(200);
       this.tweens.pauseAll(); this.time.paused = true;
     } else {

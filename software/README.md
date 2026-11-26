@@ -44,6 +44,20 @@ it removes it from wherever it was. Gamepad buttons are fixed.
 Menus: move, GRAB or LIGHT to pick, HEAVY to go back, Esc to leave. In a fight
 Esc pauses (Q quits to the title).
 
+## 1 player and phones
+
+- **1 PLAYER VS CPU** (title menu): you are P1, the CPU picks a different
+  wrestler and plays P2 with the same moves and rules. Left/Right on that menu
+  line picks the difficulty (easy, normal, hard); it is remembered.
+- **Touch controls:** on a phone or tablet a see-through d-pad (left) and
+  LIGHT / HEAVY / GRAB / BLOCK buttons (right) appear and control P1 in menus
+  and fights. Up on the d-pad jumps, diagonals work, and you can hold a
+  direction while tapping a button. The II button pauses a fight; while
+  paused, QUIT TO TITLE leaves. The first tap asks for full screen; hold the
+  phone sideways. Add `?touch` to the URL to force the controls on (or
+  `?touch=0` to hide them).
+- `?cpu=hard&p1=goblin&p2=lizard` jumps straight into a CPU fight.
+
 ## How it plays
 
 - **Run:** double-tap forward and keep holding it.

@@ -3,6 +3,9 @@ import { PlayerInput } from '../input.js';
 
 const KING_KEY = 'caveSlamKing';
 export function getKing() { try { return localStorage.getItem(KING_KEY) || null; } catch (e) { return null; } }
+const CPU_KEY = 'caveSlamCpu';
+export function getCpuLevel() { try { const v = localStorage.getItem(CPU_KEY); return ['easy', 'normal', 'hard'].includes(v) ? v : 'normal'; } catch (e) { return 'normal'; } }
+export function setCpuLevel(v) { try { localStorage.setItem(CPU_KEY, v); } catch (e) { /* storage blocked */ } }
 export function setKing(cid) { try { localStorage.setItem(KING_KEY, cid); } catch (e) { /* storage blocked */ } }
 
 export const TITLE_FONT = { fontFamily: 'Impact, Arial Black, sans-serif', fontSize: '64px', fontStyle: 'bold', color: '#ffcf5a', stroke: '#3a2018', strokeThickness: 12 };
