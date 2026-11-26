@@ -1,14 +1,36 @@
-// On-screen touch controls for phones and tablets: a see-through d-pad on the
-// left and four action buttons on the right. They drive Player 1 everywhere
-// (menus and fights), plus a pause button in fights.
-// Shown automatically on touch screens; add ?touch to the URL to force them on
-// (or ?touch=0 to hide them).
-import { W, H } from './config.js';
+// On-screen touch controls for phones and tablets: a see-through d-pad in the
+// bottom-left corner of the screen and LIGHT / HEAVY / GRAB / BLOCK in the
+// bottom-right. They are page elements laid over the game, sized to the screen
+// (not the game picture), so on wide phones they sit in the side space beside
+// the game. They drive Player 1 in menus and fights; II pauses a fight.
+// Shown automatically on touch screens; ?touch forces them on, ?touch=0 hides them.
 
 export const TOUCH = {
   enabled: false,
   state: { left: false, right: false, up: false, down: false, light: false, heavy: false, grab: false, block: false },
 };
+
+const BTNS = [
+  { b: 'light', label: 'LIGHT', dx: -1, dy: 0 },
+  { b: 'heavy', label: 'HEAVY', dx: 0, dy: -1 },
+  { b: 'grab', label: 'GRAB', dx: 1, dy: 0 },
+  { b: 'block', label: 'BLOCK', dx: 0, dy: 1 },
+];
+
+const CSS = `
+#touch { position: absolute; inset: 0; pointer-events: none; z-index: 5; font-family: monospace; display: none; }
+#touch.on { display: block; }
+#touch .c { position: absolute; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.13); border: 2px solid rgba(255,255,255,0.38); color: rgba(255,255,255,0.75); font-weight: bold; }
+#touch .c.lit { background: rgba(255,255,255,0.42); border-color: rgba(255,255,255,0.85); color: #fff; }
+#touch .knob { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.22); }
+#touch .arrow { position: absolute; width: 0; height: 0; opacity: 0.4; }
+#touch .arrow.lit { opacity: 0.85; }
+#touch .quit { position: absolute; display: none; padding: 12px 22px; background: rgba(156,75,45,0.9); border: 2px solid #ffcf5a;
+  border-radius: 10px; color: #fff; font-weight: bold; font-size: 18px; transform: translate(-50%, -50%); white-space: nowrap; }
+#touch .msg { position: absolute; left: 50%; transform: translateX(-50%); color: #ffcf5a; font-weight: bold; text-align: center;
+  text-shadow: 0 0 4px #1a0a05, 0 0 4px #1a0a05; white-space: nowrap; display: none; }
+`;
 
 function wantTouch() {
   const q = new URLSearchParams(location.search).get('touch');
@@ -18,123 +40,149 @@ function wantTouch() {
     || (window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
 }
 
-const PAD = { x: 122, y: 418, r: 84, zone: 150 };
-const BTN_R = 40;
-const BUTTONS = [
-  { b: 'light', label: 'LIGHT', x: 772, y: 428 },
-  { b: 'heavy', label: 'HEAVY', x: 846, y: 360 },
-  { b: 'grab', label: 'GRAB', x: 912, y: 428 },
-  { b: 'block', label: 'BLOCK', x: 846, y: 492 },
-];
-const PAUSE = { x: 480, y: 84, r: 22 };
-const QUIT = { x: 480, y: 380, w: 200, h: 56 };
+const el = (cls, parent, text = '') => { const d = document.createElement('div'); d.className = cls; d.textContent = text; parent.appendChild(d); return d; };
 
-export class TouchScene extends Phaser.Scene {
-  constructor() { super('Touch'); }
+export function initTouch(game) {
+  const frame = document.getElementById('frame') || document.body;
+  const style = document.createElement('style'); style.textContent = CSS; document.head.appendChild(style);
+  const root = el('', frame); root.id = 'touch';
+  const pad = el('c', root);
+  const knob = el('knob', pad);
+  const arrows = { up: el('arrow', pad), down: el('arrow', pad), left: el('arrow', pad), right: el('arrow', pad) };
+  const btns = BTNS.map((d) => ({ ...d, node: el('c', root, d.label) }));
+  const pause = el('c', root, 'II');
+  const quit = el('quit', root, 'QUIT TO TITLE');
+  const rotate = el('msg', root, 'Turn your phone sideways'); rotate.style.top = '45%'; rotate.style.fontSize = '28px';
+  const tip = el('msg', root, 'Full screen: tap Share, then Add to Home Screen');
 
-  create() {
-    TOUCH.enabled = wantTouch();
-    this.g = this.add.graphics();
-    const lbl = { font: 'bold 13px monospace', color: '#ffffff' };
-    this.labels = BUTTONS.map((d) => this.add.text(d.x, d.y, d.label, lbl).setOrigin(0.5).setAlpha(0.7));
-    this.pauseLbl = this.add.text(PAUSE.x, PAUSE.y, 'II', { ...lbl, font: 'bold 16px monospace' }).setOrigin(0.5).setAlpha(0.7);
-    this.quitLbl = this.add.text(QUIT.x, QUIT.y, 'QUIT TO TITLE', { ...lbl, font: 'bold 18px monospace' }).setOrigin(0.5);
-    this.rotate = this.add.text(W / 2, H / 2, 'Turn your phone sideways', {
-      font: 'bold 34px monospace', color: '#ffcf5a', stroke: '#1a0a05', strokeThickness: 8, backgroundColor: '#1a0a05cc', padding: { x: 20, y: 14 },
-    }).setOrigin(0.5).setVisible(false);
-    this.input.addPointer(4);
-    // a touch anywhere turns the controls on (for touch laptops etc.)
-    this.input.on('pointerdown', (p) => {
-      if (p.wasTouch && !TOUCH.enabled && new URLSearchParams(location.search).get('touch') !== '0') TOUCH.enabled = true;
-      if (!TOUCH.enabled) return;
-      this.tapButtons(p);
-    });
-    this.input.on('pointerup', () => this.goFullscreen());
-    this.scene.bringToTop();
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const standalone = navigator.standalone || (window.matchMedia && window.matchMedia('(display-mode: fullscreen), (display-mode: standalone)').matches);
+  const urlTouch = new URLSearchParams(location.search).get('touch');
+  TOUCH.enabled = wantTouch();
+
+  // ---- layout (in page pixels, relative to the frame) ----
+  let L = null;
+  function layout() {
+    const fw = frame.clientWidth; const fh = frame.clientHeight;
+    const cs = getComputedStyle(frame);
+    const pl = parseFloat(cs.paddingLeft) || 0; const pr = parseFloat(cs.paddingRight) || 0;
+    const pt = parseFloat(cs.paddingTop) || 0; const pb = parseFloat(cs.paddingBottom) || 0;
+    const w = fw - pl - pr; const h = fh - pt - pb;
+    const R = Math.min(h * 0.2, w * 0.13, 105);           // d-pad radius
+    const r = Math.min(h * 0.085, w * 0.055, 44);         // button radius
+    const m = Math.max(10, h * 0.035);                    // margin from the screen edge
+    const padC = { x: pl + m + R, y: pt + h - m - R };
+    const spread = r * 1.75;
+    const btnC = { x: pl + w - m - r - spread, y: pt + h - m - r - spread };
+    const canvas = game.canvas && game.canvas.getBoundingClientRect();
+    const fr = frame.getBoundingClientRect();
+    const cv = canvas ? { x: canvas.left - fr.left, y: canvas.top - fr.top, w: canvas.width, h: canvas.height } : { x: pl, y: pt, w, h };
+    L = { R, r, padC, btnC, spread, cv, pauseC: { x: cv.x + cv.w / 2, y: cv.y + cv.h * 0.155 }, pr: Math.max(16, r * 0.55) };
+
+    const place = (n, x, y, rad) => { n.style.left = `${x - rad}px`; n.style.top = `${y - rad}px`; n.style.width = n.style.height = `${rad * 2}px`; };
+    place(pad, padC.x, padC.y, R);
+    const k = R * 0.36; knob.style.width = knob.style.height = `${k * 2}px`;
+    const a = R * 0.17; const off = R * 0.62;
+    const arrowCss = (n, dir) => {
+      const s = n.style; s.borderStyle = 'solid'; s.borderColor = 'transparent';
+      const cx = R + (dir === 'left' ? -off : dir === 'right' ? off : 0); const cy = R + (dir === 'up' ? -off : dir === 'down' ? off : 0);
+      if (dir === 'up') { s.borderWidth = `0 ${a}px ${a * 1.4}px`; s.borderBottomColor = '#fff'; }
+      if (dir === 'down') { s.borderWidth = `${a * 1.4}px ${a}px 0`; s.borderTopColor = '#fff'; }
+      if (dir === 'left') { s.borderWidth = `${a}px ${a * 1.4}px ${a}px 0`; s.borderRightColor = '#fff'; }
+      if (dir === 'right') { s.borderWidth = `${a}px 0 ${a}px ${a * 1.4}px`; s.borderLeftColor = '#fff'; }
+      const wpx = dir === 'up' || dir === 'down' ? a * 2 : a * 1.4; const hpx = dir === 'up' || dir === 'down' ? a * 1.4 : a * 2;
+      s.left = `${cx - wpx / 2 - 2}px`; s.top = `${cy - hpx / 2 - 2}px`;
+    };
+    for (const d of Object.keys(arrows)) arrowCss(arrows[d], d);
+    for (const b of btns) { b.x = btnC.x + b.dx * spread; b.y = btnC.y + b.dy * spread; place(b.node, b.x, b.y, r); b.node.style.fontSize = `${Math.max(9, r * 0.32)}px`; }
+    place(pause, L.pauseC.x, L.pauseC.y, L.pr); pause.style.fontSize = `${L.pr * 0.7}px`;
+    quit.style.left = `${cv.x + cv.w / 2}px`; quit.style.top = `${cv.y + cv.h * 0.72}px`;
+    tip.style.top = `${cv.y + 4}px`; tip.style.fontSize = `${Math.max(11, Math.min(15, cv.w * 0.016))}px`;
   }
 
-  goFullscreen() {
-    if (!TOUCH.enabled || this.triedFull) return;
-    this.triedFull = true;
-    const sc = this.scale;
-    try {
-      if (sc.fullscreen && sc.fullscreen.available && !sc.isFullscreen) sc.startFullscreen();
-      if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(() => {});
-    } catch (e) { /* not allowed here */ }
-  }
-
-  fight() {
-    const f = this.scene.get('Fight');
-    return f && this.scene.isActive('Fight') && f.fighters ? f : null;
-  }
-
-  // one-shot taps: pause / quit
-  tapButtons(p) {
-    const f = this.fight();
-    if (!f) return;
-    if (Math.hypot(p.x - PAUSE.x, p.y - PAUSE.y) < PAUSE.r + 14) { f.togglePause(); return; }
-    if (f.paused && Math.abs(p.x - QUIT.x) < QUIT.w / 2 && Math.abs(p.y - QUIT.y) < QUIT.h / 2) f.quit();
-  }
-
-  update() {
+  // ---- pointers ----
+  const pointers = new Map();   // id -> {x, y} in frame pixels
+  const toFrame = (e) => { const fr = frame.getBoundingClientRect(); return { x: e.clientX - fr.left, y: e.clientY - fr.top }; };
+  let padVec = null;
+  function compute() {
     const s = TOUCH.state;
     for (const k of Object.keys(s)) s[k] = false;
-    const g = this.g; g.clear();
-    const on = TOUCH.enabled;
-    const f = on ? this.fight() : null;
-    this.labels.forEach((t) => t.setVisible(on));
-    this.pauseLbl.setVisible(!!f);
-    this.quitLbl.setVisible(!!(f && f.paused));
-    this.rotate.setVisible(on && window.innerHeight > window.innerWidth * 1.05);
-    if (!on) return;
-    this.scene.bringToTop();
-
-    let padVec = null;
-    for (const p of this.input.manager.pointers) {
-      if (!p.isDown) continue;
-      const dx = p.x - PAD.x; const dy = p.y - PAD.y;
-      const d = Math.hypot(dx, dy);
-      if (d < PAD.zone && p.x < W / 2) {
-        if (d > 16) {
-          padVec = { x: dx / d, y: dy / d, d: Math.min(d, PAD.r) };
+    padVec = null;
+    if (!L) return;
+    for (const p of pointers.values()) {
+      const dx = p.x - L.padC.x; const dy = p.y - L.padC.y; const d = Math.hypot(dx, dy);
+      if (d < L.R * 1.7 && p.x < L.cv.x + L.cv.w / 2) {
+        if (d > L.R * 0.18) {
+          padVec = { x: dx / d, y: dy / d, d: Math.min(d, L.R) };
           s.right = s.right || padVec.x > 0.38; s.left = s.left || padVec.x < -0.38;
           s.up = s.up || padVec.y < -0.45; s.down = s.down || padVec.y > 0.45;
         }
         continue;
       }
-      let best = null; let bd = BTN_R * 1.35;
-      for (const btn of BUTTONS) { const bd2 = Math.hypot(p.x - btn.x, p.y - btn.y); if (bd2 < bd) { bd = bd2; best = btn; } }
+      let best = null; let bd = L.r * 1.4;
+      for (const b of btns) { const d2 = Math.hypot(p.x - b.x, p.y - b.y); if (d2 < bd) { bd = d2; best = b; } }
       if (best) s[best.b] = true;
     }
-
-    // d-pad
-    g.fillStyle(0xffffff, 0.1).fillCircle(PAD.x, PAD.y, PAD.r);
-    g.lineStyle(2, 0xffffff, 0.35).strokeCircle(PAD.x, PAD.y, PAD.r);
-    const arrow = (ax, ay, lit) => {
-      const cx = PAD.x + ax * PAD.r * 0.62; const cy = PAD.y + ay * PAD.r * 0.62;
-      const px = -ay; const py = ax; const sz = 15;
-      g.fillStyle(0xffffff, lit ? 0.7 : 0.3);
-      g.fillTriangle(cx + ax * sz, cy + ay * sz, cx - ax * sz * 0.6 + px * sz, cy - ay * sz * 0.6 + py * sz, cx - ax * sz * 0.6 - px * sz, cy - ay * sz * 0.6 - py * sz);
-    };
-    arrow(0, -1, s.up); arrow(0, 1, s.down); arrow(-1, 0, s.left); arrow(1, 0, s.right);
-    const kx = padVec ? PAD.x + padVec.x * padVec.d * 0.55 : PAD.x; const ky = padVec ? PAD.y + padVec.y * padVec.d * 0.55 : PAD.y;
-    g.fillStyle(0xffffff, padVec ? 0.4 : 0.22).fillCircle(kx, ky, 30);
-
-    // action buttons
-    for (const btn of BUTTONS) {
-      const lit = s[btn.b];
-      g.fillStyle(0xffffff, lit ? 0.45 : 0.14).fillCircle(btn.x, btn.y, BTN_R);
-      g.lineStyle(2, 0xffffff, lit ? 0.8 : 0.4).strokeCircle(btn.x, btn.y, BTN_R);
-    }
-    this.labels.forEach((t, i) => t.setAlpha(s[BUTTONS[i].b] ? 1 : 0.65));
-
-    if (f) {
-      g.fillStyle(0xffffff, 0.14).fillCircle(PAUSE.x, PAUSE.y, PAUSE.r);
-      g.lineStyle(2, 0xffffff, 0.4).strokeCircle(PAUSE.x, PAUSE.y, PAUSE.r);
-      if (f.paused) {
-        g.fillStyle(0x9c4b2d, 0.85).fillRoundedRect(QUIT.x - QUIT.w / 2, QUIT.y - QUIT.h / 2, QUIT.w, QUIT.h, 10);
-        g.lineStyle(2, 0xffcf5a, 0.9).strokeRoundedRect(QUIT.x - QUIT.w / 2, QUIT.y - QUIT.h / 2, QUIT.w, QUIT.h, 10);
-      }
-    }
   }
+  const fight = () => { const f = game.scene.getScene('Fight'); return f && game.scene.isActive('Fight') && f.fighters ? f : null; };
+  const near = (p, c, rad) => Math.hypot(p.x - c.x, p.y - c.y) < rad;
+  function down(e) {
+    if (e.pointerType === 'touch' && !TOUCH.enabled && urlTouch !== '0') { TOUCH.enabled = true; layout(); }
+    if (!TOUCH.enabled || (e.pointerType === 'mouse' && urlTouch === null)) return;
+    const p = toFrame(e);
+    const f = fight();
+    if (f && L && near(p, L.pauseC, L.pr + 14)) { f.togglePause(); return; }
+    if (f && f.paused) {
+      const q = quit.getBoundingClientRect(); const fr = frame.getBoundingClientRect();
+      if (p.x > q.left - fr.left && p.x < q.right - fr.left && p.y > q.top - fr.top && p.y < q.bottom - fr.top) { f.quit(); return; }
+    }
+    pointers.set(e.pointerId, p); compute();
+    if (e.cancelable) e.preventDefault();
+  }
+  function move(e) { if (pointers.has(e.pointerId)) { pointers.set(e.pointerId, toFrame(e)); compute(); } }
+  function up(e) {
+    if (pointers.delete(e.pointerId)) compute();
+    if (TOUCH.enabled && e.pointerType === 'touch') goFullscreen();
+  }
+  window.addEventListener('pointerdown', down, { passive: false });
+  window.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', up);
+  window.addEventListener('pointercancel', up);
+  window.addEventListener('blur', () => { pointers.clear(); compute(); });
+  document.addEventListener('contextmenu', (e) => { if (TOUCH.enabled) e.preventDefault(); });
+
+  let triedFull = false;
+  function goFullscreen() {
+    if (triedFull || standalone) return;
+    triedFull = true;
+    const d = document.documentElement;
+    try {
+      const req = d.requestFullscreen || d.webkitRequestFullscreen;
+      if (req && !document.fullscreenElement) { const r = req.call(d); if (r && r.catch) r.catch(() => {}); }
+      if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(() => {});
+    } catch (err) { /* not allowed here */ }
+  }
+
+  // ---- draw state every frame ----
+  let lastKey = '';
+  function tick() {
+    requestAnimationFrame(tick);
+    root.classList.toggle('on', TOUCH.enabled);
+    if (!TOUCH.enabled) return;
+    const key = `${frame.clientWidth}x${frame.clientHeight}:${game.canvas ? game.canvas.style.width + game.canvas.style.marginLeft + game.canvas.style.marginTop : ''}`;
+    if (key !== lastKey) { lastKey = key; layout(); }
+    const s = TOUCH.state;
+    for (const d of Object.keys(arrows)) arrows[d].classList.toggle('lit', s[d]);
+    pad.classList.toggle('lit', !!padVec);
+    const k = L.R * 0.36;
+    const kx = L.R - k + (padVec ? padVec.x * padVec.d * 0.55 : 0); const ky = L.R - k + (padVec ? padVec.y * padVec.d * 0.55 : 0);
+    knob.style.left = `${kx - 2}px`; knob.style.top = `${ky - 2}px`;
+    for (const b of btns) b.node.classList.toggle('lit', s[b.b]);
+    const f = fight();
+    pause.style.display = f ? 'flex' : 'none';
+    quit.style.display = f && f.paused ? 'block' : 'none';
+    rotate.style.display = window.innerHeight > window.innerWidth * 1.05 ? 'block' : 'none';
+    tip.style.display = ios && !standalone && game.scene.isActive('Title') ? 'block' : 'none';
+  }
+  requestAnimationFrame(tick);
 }

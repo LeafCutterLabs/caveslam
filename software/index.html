@@ -3,16 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Cave Slam</title>
+  <!-- Add to Home Screen: runs full screen without browser bars -->
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Cave Slam</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cave Slam">
+  <meta name="theme-color" content="#1c0b06">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" href="icon-192.png">
   <style>
-    html, body { margin: 0; height: 100%; background: #1c0b06; overflow: hidden; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; overscroll-behavior: none; }
-    #game { width: 100vw; height: 100vh; }
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #1c0b06; overflow: hidden;
+      touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+      overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
+    /* The frame tracks the part of the screen you can actually see (main.js keeps it
+       matched to visualViewport) and stays clear of the notch / home bar. */
+    #frame { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; height: 100dvh; box-sizing: border-box;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+    #game { width: 100%; height: 100%; }
   </style>
 </head>
 <body>
-  <div id="game"></div>
+  <div id="frame"><div id="game"></div></div>
   <script src="lib/phaser.min.js"></script>
   <script type="module" src="src/main.js"></script>
 </body>

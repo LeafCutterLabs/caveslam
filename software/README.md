@@ -53,8 +53,13 @@ Esc pauses (Q quits to the title).
   LIGHT / HEAVY / GRAB / BLOCK buttons (right) appear and control P1 in menus
   and fights. Up on the d-pad jumps, diagonals work, and you can hold a
   direction while tapping a button. The II button pauses a fight; while
-  paused, QUIT TO TITLE leaves. The first tap asks for full screen; hold the
-  phone sideways. Add `?touch` to the URL to force the controls on (or
+  paused, QUIT TO TITLE leaves. The controls sit in the screen corners (in the
+  side space on wide phones), and the game sizes itself to the part of the
+  screen the browser leaves visible. Hold the phone sideways.
+- **Full screen on iPhone:** Safari can't hide its bars for a web page, so use
+  Share → Add to Home Screen; the home-screen icon opens the game full screen
+  (manifest.webmanifest, icon-*.png). Android Chrome goes full screen on the
+  first tap. Add `?touch` to the URL to force the controls on (or
   `?touch=0` to hide them).
 - `?cpu=hard&p1=goblin&p2=lizard` jumps straight into a CPU fight.
 
