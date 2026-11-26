@@ -1,0 +1,45 @@
+# Publishes the game to GitHub Pages on every push to main.
+# The local dev server lists assets/ at /__assets.json; Pages is static, so the
+# same list is written to software/assets-list.json here instead.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build asset list
+        run: |
+          python3 - <<'PY'
+          import json, os
+          files = []
+          for d, _, names in os.walk('assets'):
+              for n in names:
+                  files.append(os.path.relpath(os.path.join(d, n), 'assets').replace(os.sep, '/'))
+          json.dump(sorted(files), open('software/assets-list.json', 'w'))
+          print(len(files), 'asset files listed')
+          PY
+          touch .nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

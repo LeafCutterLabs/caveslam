@@ -1,0 +1,740 @@
+{
+  "lizard_base_strike-light_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 20,
+      "w": 103,
+      "h": 159
+    }
+  },
+  "lizard_base_strike-light_02": {
+    "hurtbox": {
+      "x": 30,
+      "y": 22,
+      "w": 110,
+      "h": 157
+    },
+    "hitbox": {
+      "x": 140,
+      "y": 68,
+      "w": 44,
+      "h": 40
+    }
+  },
+  "lizard_base_strike-light_03": {
+    "hurtbox": {
+      "x": 42,
+      "y": 20,
+      "w": 90,
+      "h": 159
+    }
+  },
+  "lizard_base_strike-heavy_01": {
+    "hurtbox": {
+      "x": 46,
+      "y": 19,
+      "w": 84,
+      "h": 160
+    }
+  },
+  "lizard_base_strike-heavy_02": {
+    "hurtbox": {
+      "x": 33,
+      "y": 33,
+      "w": 105,
+      "h": 146
+    }
+  },
+  "lizard_base_strike-heavy_03": {
+    "hurtbox": {
+      "x": 30,
+      "y": 36,
+      "w": 111,
+      "h": 143
+    },
+    "hitbox": {
+      "x": 141,
+      "y": 92,
+      "w": 44,
+      "h": 36
+    }
+  },
+  "lizard_base_strike-heavy_04": {
+    "hurtbox": {
+      "x": 30,
+      "y": 33,
+      "w": 111,
+      "h": 146
+    }
+  },
+  "lizard_base_strike-heavy_05": {
+    "hurtbox": {
+      "x": 48,
+      "y": 20,
+      "w": 81,
+      "h": 159
+    }
+  },
+  "lizard_base_strike-low_01": {
+    "hurtbox": {
+      "x": 52,
+      "y": 109,
+      "w": 73,
+      "h": 70
+    }
+  },
+  "lizard_base_strike-low_02": {
+    "hurtbox": {
+      "x": 42,
+      "y": 96,
+      "w": 90,
+      "h": 83
+    }
+  },
+  "lizard_base_strike-low_03": {
+    "hurtbox": {
+      "x": 29,
+      "y": 73,
+      "w": 112,
+      "h": 106
+    },
+    "hitbox": {
+      "x": 141,
+      "y": 146,
+      "w": 44,
+      "h": 27
+    }
+  },
+  "lizard_base_strike-low_04": {
+    "hurtbox": {
+      "x": 50,
+      "y": 88,
+      "w": 77,
+      "h": 91
+    }
+  },
+  "lizard_base_strike-air_01": {
+    "hurtbox": {
+      "x": 48,
+      "y": 58,
+      "w": 81,
+      "h": 121
+    }
+  },
+  "lizard_base_strike-air_02": {
+    "hurtbox": {
+      "x": 30,
+      "y": 57,
+      "w": 110,
+      "h": 122
+    },
+    "hitbox": {
+      "x": 140,
+      "y": 100,
+      "w": 44,
+      "h": 31
+    }
+  },
+  "lizard_base_strike-air_03": {
+    "hurtbox": {
+      "x": 46,
+      "y": 54,
+      "w": 83,
+      "h": 125
+    }
+  },
+  "lizard_grab_lockup_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 60,
+      "w": 123,
+      "h": 119
+    },
+    "attach": {
+      "x": 183,
+      "y": 111
+    }
+  },
+  "lizard_grab_lockup_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 47,
+      "w": 123,
+      "h": 132
+    },
+    "attach": {
+      "x": 183,
+      "y": 103
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 92,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_lockup_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 78,
+      "w": 123,
+      "h": 101
+    },
+    "attach": {
+      "x": 183,
+      "y": 121
+    }
+  },
+  "lizard_grab_grab-behind_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 57,
+      "w": 123,
+      "h": 122
+    },
+    "attach": {
+      "x": 183,
+      "y": 109
+    }
+  },
+  "lizard_grab_grab-behind_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 51,
+      "w": 123,
+      "h": 128
+    },
+    "attach": {
+      "x": 183,
+      "y": 106
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 95,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_grab-behind_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 33,
+      "w": 123,
+      "h": 146
+    },
+    "attach": {
+      "x": 183,
+      "y": 95
+    }
+  },
+  "lizard_grab_grab-ground_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 78,
+      "w": 123,
+      "h": 101
+    },
+    "attach": {
+      "x": 183,
+      "y": 158
+    }
+  },
+  "lizard_grab_grab-ground_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 80,
+      "w": 123,
+      "h": 99
+    },
+    "attach": {
+      "x": 183,
+      "y": 158
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 147,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_grab-ground_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 50,
+      "w": 123,
+      "h": 129
+    },
+    "attach": {
+      "x": 183,
+      "y": 152
+    }
+  },
+  "lizard_grab_hold-struggle_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 24,
+      "w": 123,
+      "h": 155
+    },
+    "attach": {
+      "x": 183,
+      "y": 90
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 79,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_hold-struggle_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 26,
+      "w": 123,
+      "h": 153
+    },
+    "attach": {
+      "x": 183,
+      "y": 92
+    }
+  },
+  "lizard_grab_pin_01": {
+    "hurtbox": {
+      "x": 34,
+      "y": 110,
+      "w": 124,
+      "h": 69
+    },
+    "attach": {
+      "x": 183,
+      "y": 165
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 154,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_pin_02": {
+    "hurtbox": {
+      "x": 34,
+      "y": 116,
+      "w": 124,
+      "h": 63
+    },
+    "attach": {
+      "x": 183,
+      "y": 166
+    }
+  },
+  "lizard_grab_pin-hold_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 73,
+      "w": 123,
+      "h": 106
+    },
+    "attach": {
+      "x": 183,
+      "y": 157
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 146,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_grab_pin-hold_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 81,
+      "w": 123,
+      "h": 98
+    },
+    "attach": {
+      "x": 183,
+      "y": 159
+    }
+  },
+  "lizard_grab_reversal_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 33,
+      "w": 123,
+      "h": 146
+    },
+    "attach": {
+      "x": 183,
+      "y": 95
+    }
+  },
+  "lizard_grab_reversal_02": {
+    "hurtbox": {
+      "x": 34,
+      "y": 86,
+      "w": 124,
+      "h": 93
+    },
+    "attach": {
+      "x": 183,
+      "y": 126
+    }
+  },
+  "lizard_grab_reversal_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 40,
+      "w": 123,
+      "h": 139
+    },
+    "attach": {
+      "x": 183,
+      "y": 99
+    }
+  },
+  "lizard_grab_reversal_04": {
+    "hurtbox": {
+      "x": 35,
+      "y": 48,
+      "w": 123,
+      "h": 131
+    },
+    "attach": {
+      "x": 183,
+      "y": 104
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 93,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_throw_body-slam_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 73,
+      "w": 123,
+      "h": 106
+    },
+    "attach": {
+      "x": 183,
+      "y": 118
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 107,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_throw_body-slam_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 26,
+      "w": 123,
+      "h": 153
+    },
+    "attach": {
+      "x": 183,
+      "y": 92
+    }
+  },
+  "lizard_throw_body-slam_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 47,
+      "w": 123,
+      "h": 132
+    },
+    "attach": {
+      "x": 183,
+      "y": 103
+    }
+  },
+  "lizard_throw_body-slam_04": {
+    "hurtbox": {
+      "x": 35,
+      "y": 64,
+      "w": 123,
+      "h": 115
+    },
+    "attach": {
+      "x": 183,
+      "y": 113
+    }
+  },
+  "lizard_throw_body-slam_05": {
+    "hurtbox": {
+      "x": 35,
+      "y": 86,
+      "w": 123,
+      "h": 93
+    },
+    "attach": {
+      "x": 183,
+      "y": 126
+    }
+  },
+  "lizard_throw_rollup_01": {
+    "hurtbox": {
+      "x": 35,
+      "y": 82,
+      "w": 123,
+      "h": 97
+    },
+    "attach": {
+      "x": 183,
+      "y": 159
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 148,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_throw_rollup_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 89,
+      "w": 123,
+      "h": 90
+    },
+    "attach": {
+      "x": 183,
+      "y": 160
+    }
+  },
+  "lizard_throw_rollup_03": {
+    "hurtbox": {
+      "x": 35,
+      "y": 94,
+      "w": 123,
+      "h": 85
+    },
+    "attach": {
+      "x": 183,
+      "y": 161
+    }
+  },
+  "lizard_throw_rollup_04": {
+    "hurtbox": {
+      "x": 35,
+      "y": 139,
+      "w": 123,
+      "h": 40
+    },
+    "attach": {
+      "x": 183,
+      "y": 171
+    }
+  },
+  "lizard_grab_slip_01": {
+    "hurtbox": {
+      "x": 42,
+      "y": 19,
+      "w": 108,
+      "h": 160
+    },
+    "attach": {
+      "x": 172,
+      "y": 88
+    }
+  },
+  "lizard_grab_slip_02": {
+    "hurtbox": {
+      "x": 34,
+      "y": 56,
+      "w": 124,
+      "h": 123
+    },
+    "attach": {
+      "x": 183,
+      "y": 109
+    }
+  },
+  "lizard_throw_tail-whip-suplex_01": {
+    "hurtbox": {
+      "x": 31,
+      "y": 32,
+      "w": 131,
+      "h": 147
+    },
+    "attach": {
+      "x": 183,
+      "y": 95
+    }
+  },
+  "lizard_throw_tail-whip-suplex_02": {
+    "hurtbox": {
+      "x": 30,
+      "y": 49,
+      "w": 132,
+      "h": 130
+    },
+    "attach": {
+      "x": 183,
+      "y": 105
+    }
+  },
+  "lizard_throw_tail-whip-suplex_03": {
+    "hurtbox": {
+      "x": 33,
+      "y": 11,
+      "w": 126,
+      "h": 168
+    },
+    "attach": {
+      "x": 183,
+      "y": 83
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 72,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_throw_tail-whip-suplex_04": {
+    "hurtbox": {
+      "x": 41,
+      "y": 11,
+      "w": 111,
+      "h": 168
+    },
+    "attach": {
+      "x": 175,
+      "y": 83
+    }
+  },
+  "lizard_throw_tail-whip-suplex_05": {
+    "hurtbox": {
+      "x": 47,
+      "y": 11,
+      "w": 98,
+      "h": 168
+    },
+    "attach": {
+      "x": 166,
+      "y": 83
+    }
+  },
+  "lizard_throw_tail-whip-suplex_06": {
+    "hurtbox": {
+      "x": 30,
+      "y": 72,
+      "w": 132,
+      "h": 107
+    },
+    "attach": {
+      "x": 183,
+      "y": 118
+    }
+  },
+  "lizard_throw_tail-whip-suplex_07": {
+    "hurtbox": {
+      "x": 31,
+      "y": 60,
+      "w": 131,
+      "h": 119
+    },
+    "attach": {
+      "x": 183,
+      "y": 111
+    }
+  },
+  "lizard_throw_tail-whip-suplex_08": {
+    "hurtbox": {
+      "x": 34,
+      "y": 11,
+      "w": 125,
+      "h": 168
+    },
+    "attach": {
+      "x": 183,
+      "y": 83
+    }
+  },
+  "lizard_throw_basilisk-bomb_01": {
+    "hurtbox": {
+      "x": 30,
+      "y": 26,
+      "w": 132,
+      "h": 153
+    },
+    "attach": {
+      "x": 183,
+      "y": 92
+    },
+    "grabBox": {
+      "x": 165,
+      "y": 81,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "lizard_throw_basilisk-bomb_02": {
+    "hurtbox": {
+      "x": 48,
+      "y": 20,
+      "w": 96,
+      "h": 159
+    },
+    "attach": {
+      "x": 96,
+      "y": 34
+    }
+  },
+  "lizard_throw_basilisk-bomb_03": {
+    "hurtbox": {
+      "x": 53,
+      "y": 20,
+      "w": 87,
+      "h": 159
+    },
+    "attach": {
+      "x": 96,
+      "y": 34
+    }
+  },
+  "lizard_throw_basilisk-bomb_04": {
+    "hurtbox": {
+      "x": 30,
+      "y": 65,
+      "w": 132,
+      "h": 114
+    },
+    "attach": {
+      "x": 183,
+      "y": 114
+    }
+  },
+  "lizard_throw_basilisk-bomb_05": {
+    "hurtbox": {
+      "x": 30,
+      "y": 64,
+      "w": 132,
+      "h": 115
+    },
+    "attach": {
+      "x": 183,
+      "y": 113
+    }
+  },
+  "lizard_throw_basilisk-bomb_06": {
+    "hurtbox": {
+      "x": 42,
+      "y": 20,
+      "w": 108,
+      "h": 159
+    },
+    "attach": {
+      "x": 173,
+      "y": 88
+    }
+  }
+}

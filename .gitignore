@@ -1,0 +1,9 @@
+# generated at deploy time (see .github/workflows/pages.yml)
+software/assets-list.json
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
+.DS_Store
+node_modules/
+.claude/

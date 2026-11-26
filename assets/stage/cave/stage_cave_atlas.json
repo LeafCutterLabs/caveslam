@@ -1,0 +1,513 @@
+{
+  "frames": {
+    "stage_cave_spider_climb_01": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_climb_02": {
+      "frame": {
+        "x": 122,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_descend_01": {
+      "frame": {
+        "x": 244,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_descend_02": {
+      "frame": {
+        "x": 366,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_descend_03": {
+      "frame": {
+        "x": 488,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_descend_04": {
+      "frame": {
+        "x": 610,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_shoot_01": {
+      "frame": {
+        "x": 732,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_shoot_02": {
+      "frame": {
+        "x": 854,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_spider_shoot_03": {
+      "frame": {
+        "x": 976,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 160
+      }
+    },
+    "stage_cave_stalactite-fall_01": {
+      "frame": {
+        "x": 1098,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 160
+      }
+    },
+    "stage_cave_stalactite-fall_02": {
+      "frame": {
+        "x": 1160,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 160
+      }
+    },
+    "stage_cave_stalactite-fall_03": {
+      "frame": {
+        "x": 1222,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 160
+      }
+    },
+    "stage_cave_banner_01": {
+      "frame": {
+        "x": 1284,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 120
+      }
+    },
+    "stage_cave_banner_02": {
+      "frame": {
+        "x": 1366,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 120
+      }
+    },
+    "stage_cave_banner_03": {
+      "frame": {
+        "x": 1448,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 120
+      }
+    },
+    "stage_cave_banner_04": {
+      "frame": {
+        "x": 1530,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 120
+      }
+    },
+    "stage_cave_torch_01": {
+      "frame": {
+        "x": 1612,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 80
+      }
+    },
+    "stage_cave_torch_02": {
+      "frame": {
+        "x": 1654,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 80
+      }
+    },
+    "stage_cave_torch_03": {
+      "frame": {
+        "x": 1696,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 80
+      }
+    },
+    "stage_cave_torch_04": {
+      "frame": {
+        "x": 1738,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 80
+      }
+    },
+    "stage_item_oil-bottle_01": {
+      "frame": {
+        "x": 1780,
+        "y": 0,
+        "w": 40,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 60
+      }
+    },
+    "stage_item_oil-bottle_02": {
+      "frame": {
+        "x": 1822,
+        "y": 0,
+        "w": 40,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 60
+      }
+    },
+    "stage_cave_drip_01": {
+      "frame": {
+        "x": 1864,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 40
+      }
+    },
+    "stage_cave_drip_02": {
+      "frame": {
+        "x": 1886,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 40
+      }
+    },
+    "stage_cave_drip_03": {
+      "frame": {
+        "x": 1908,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 40
+      }
+    }
+  },
+  "meta": {
+    "image": "stage_cave_atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1928,
+      "h": 160
+    },
+    "scale": "1"
+  }
+}

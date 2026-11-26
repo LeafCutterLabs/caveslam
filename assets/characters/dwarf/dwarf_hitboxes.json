@@ -1,0 +1,716 @@
+{
+  "dwarf_base_strike-light_01": {
+    "hurtbox": {
+      "x": 54,
+      "y": 73,
+      "w": 68,
+      "h": 106
+    }
+  },
+  "dwarf_base_strike-light_02": {
+    "hurtbox": {
+      "x": 48,
+      "y": 70,
+      "w": 79,
+      "h": 109
+    },
+    "hitbox": {
+      "x": 127,
+      "y": 100,
+      "w": 30,
+      "h": 28
+    }
+  },
+  "dwarf_base_strike-light_03": {
+    "hurtbox": {
+      "x": 58,
+      "y": 73,
+      "w": 63,
+      "h": 106
+    }
+  },
+  "dwarf_base_strike-heavy_01": {
+    "hurtbox": {
+      "x": 59,
+      "y": 73,
+      "w": 61,
+      "h": 106
+    }
+  },
+  "dwarf_base_strike-heavy_02": {
+    "hurtbox": {
+      "x": 46,
+      "y": 68,
+      "w": 82,
+      "h": 111
+    }
+  },
+  "dwarf_base_strike-heavy_03": {
+    "hurtbox": {
+      "x": 46,
+      "y": 66,
+      "w": 81,
+      "h": 113
+    },
+    "hitbox": {
+      "x": 127,
+      "y": 76,
+      "w": 31,
+      "h": 29
+    }
+  },
+  "dwarf_base_strike-heavy_04": {
+    "hurtbox": {
+      "x": 41,
+      "y": 67,
+      "w": 90,
+      "h": 112
+    }
+  },
+  "dwarf_base_strike-heavy_05": {
+    "hurtbox": {
+      "x": 56,
+      "y": 73,
+      "w": 66,
+      "h": 106
+    }
+  },
+  "dwarf_base_strike-low_01": {
+    "hurtbox": {
+      "x": 58,
+      "y": 112,
+      "w": 62,
+      "h": 67
+    }
+  },
+  "dwarf_base_strike-low_02": {
+    "hurtbox": {
+      "x": 51,
+      "y": 97,
+      "w": 73,
+      "h": 82
+    }
+  },
+  "dwarf_base_strike-low_03": {
+    "hurtbox": {
+      "x": 43,
+      "y": 92,
+      "w": 86,
+      "h": 87
+    },
+    "hitbox": {
+      "x": 129,
+      "y": 151,
+      "w": 33,
+      "h": 23
+    }
+  },
+  "dwarf_base_strike-low_04": {
+    "hurtbox": {
+      "x": 58,
+      "y": 104,
+      "w": 62,
+      "h": 75
+    }
+  },
+  "dwarf_base_strike-air_01": {
+    "hurtbox": {
+      "x": 56,
+      "y": 87,
+      "w": 66,
+      "h": 92
+    }
+  },
+  "dwarf_base_strike-air_02": {
+    "hurtbox": {
+      "x": 41,
+      "y": 109,
+      "w": 89,
+      "h": 70
+    },
+    "hitbox": {
+      "x": 130,
+      "y": 133,
+      "w": 34,
+      "h": 19
+    }
+  },
+  "dwarf_base_strike-air_03": {
+    "hurtbox": {
+      "x": 56,
+      "y": 91,
+      "w": 66,
+      "h": 88
+    }
+  },
+  "dwarf_grab_lockup_01": {
+    "hurtbox": {
+      "x": 51,
+      "y": 89,
+      "w": 90,
+      "h": 90
+    },
+    "attach": {
+      "x": 157,
+      "y": 129
+    }
+  },
+  "dwarf_grab_lockup_02": {
+    "hurtbox": {
+      "x": 51,
+      "y": 76,
+      "w": 91,
+      "h": 103
+    },
+    "attach": {
+      "x": 158,
+      "y": 122
+    },
+    "grabBox": {
+      "x": 139,
+      "y": 111,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_lockup_03": {
+    "hurtbox": {
+      "x": 50,
+      "y": 92,
+      "w": 93,
+      "h": 87
+    },
+    "attach": {
+      "x": 159,
+      "y": 131
+    }
+  },
+  "dwarf_grab_grab-behind_01": {
+    "hurtbox": {
+      "x": 52,
+      "y": 76,
+      "w": 88,
+      "h": 103
+    },
+    "attach": {
+      "x": 156,
+      "y": 122
+    }
+  },
+  "dwarf_grab_grab-behind_02": {
+    "hurtbox": {
+      "x": 53,
+      "y": 72,
+      "w": 87,
+      "h": 107
+    },
+    "attach": {
+      "x": 155,
+      "y": 120
+    },
+    "grabBox": {
+      "x": 136,
+      "y": 109,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_grab-behind_03": {
+    "hurtbox": {
+      "x": 56,
+      "y": 71,
+      "w": 80,
+      "h": 108
+    },
+    "attach": {
+      "x": 150,
+      "y": 119
+    }
+  },
+  "dwarf_grab_grab-ground_01": {
+    "hurtbox": {
+      "x": 56,
+      "y": 94,
+      "w": 80,
+      "h": 85
+    },
+    "attach": {
+      "x": 151,
+      "y": 159
+    }
+  },
+  "dwarf_grab_grab-ground_02": {
+    "hurtbox": {
+      "x": 57,
+      "y": 99,
+      "w": 78,
+      "h": 80
+    },
+    "attach": {
+      "x": 149,
+      "y": 160
+    },
+    "grabBox": {
+      "x": 130,
+      "y": 149,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_grab-ground_03": {
+    "hurtbox": {
+      "x": 56,
+      "y": 75,
+      "w": 81,
+      "h": 104
+    },
+    "attach": {
+      "x": 152,
+      "y": 155
+    }
+  },
+  "dwarf_grab_hold-struggle_01": {
+    "hurtbox": {
+      "x": 58,
+      "y": 83,
+      "w": 77,
+      "h": 96
+    },
+    "attach": {
+      "x": 149,
+      "y": 126
+    },
+    "grabBox": {
+      "x": 130,
+      "y": 115,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_hold-struggle_02": {
+    "hurtbox": {
+      "x": 58,
+      "y": 82,
+      "w": 77,
+      "h": 97
+    },
+    "attach": {
+      "x": 149,
+      "y": 125
+    }
+  },
+  "dwarf_grab_pin_01": {
+    "hurtbox": {
+      "x": 44,
+      "y": 121,
+      "w": 105,
+      "h": 58
+    },
+    "attach": {
+      "x": 167,
+      "y": 166
+    },
+    "grabBox": {
+      "x": 148,
+      "y": 155,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_pin_02": {
+    "hurtbox": {
+      "x": 44,
+      "y": 120,
+      "w": 105,
+      "h": 59
+    },
+    "attach": {
+      "x": 167,
+      "y": 165
+    }
+  },
+  "dwarf_grab_pin-hold_01": {
+    "hurtbox": {
+      "x": 56,
+      "y": 108,
+      "w": 81,
+      "h": 71
+    },
+    "attach": {
+      "x": 151,
+      "y": 163
+    },
+    "grabBox": {
+      "x": 132,
+      "y": 152,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_grab_pin-hold_02": {
+    "hurtbox": {
+      "x": 56,
+      "y": 117,
+      "w": 81,
+      "h": 62
+    },
+    "attach": {
+      "x": 151,
+      "y": 165
+    }
+  },
+  "dwarf_grab_reversal_01": {
+    "hurtbox": {
+      "x": 51,
+      "y": 79,
+      "w": 90,
+      "h": 100
+    },
+    "attach": {
+      "x": 157,
+      "y": 124
+    }
+  },
+  "dwarf_grab_reversal_02": {
+    "hurtbox": {
+      "x": 56,
+      "y": 126,
+      "w": 80,
+      "h": 53
+    },
+    "attach": {
+      "x": 150,
+      "y": 149
+    }
+  },
+  "dwarf_grab_reversal_03": {
+    "hurtbox": {
+      "x": 52,
+      "y": 91,
+      "w": 89,
+      "h": 88
+    },
+    "attach": {
+      "x": 157,
+      "y": 130
+    }
+  },
+  "dwarf_grab_reversal_04": {
+    "hurtbox": {
+      "x": 52,
+      "y": 88,
+      "w": 89,
+      "h": 91
+    },
+    "attach": {
+      "x": 157,
+      "y": 129
+    },
+    "grabBox": {
+      "x": 138,
+      "y": 118,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_throw_body-slam_01": {
+    "hurtbox": {
+      "x": 56,
+      "y": 82,
+      "w": 81,
+      "h": 97
+    },
+    "attach": {
+      "x": 151,
+      "y": 125
+    },
+    "grabBox": {
+      "x": 132,
+      "y": 114,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_throw_body-slam_02": {
+    "hurtbox": {
+      "x": 64,
+      "y": 75,
+      "w": 64,
+      "h": 104
+    },
+    "attach": {
+      "x": 140,
+      "y": 122
+    }
+  },
+  "dwarf_throw_body-slam_03": {
+    "hurtbox": {
+      "x": 54,
+      "y": 69,
+      "w": 84,
+      "h": 110
+    },
+    "attach": {
+      "x": 153,
+      "y": 118
+    }
+  },
+  "dwarf_throw_body-slam_04": {
+    "hurtbox": {
+      "x": 54,
+      "y": 81,
+      "w": 84,
+      "h": 98
+    },
+    "attach": {
+      "x": 153,
+      "y": 125
+    }
+  },
+  "dwarf_throw_body-slam_05": {
+    "hurtbox": {
+      "x": 56,
+      "y": 102,
+      "w": 80,
+      "h": 77
+    },
+    "attach": {
+      "x": 150,
+      "y": 136
+    }
+  },
+  "dwarf_throw_rollup_01": {
+    "hurtbox": {
+      "x": 55,
+      "y": 83,
+      "w": 82,
+      "h": 96
+    },
+    "attach": {
+      "x": 152,
+      "y": 157
+    },
+    "grabBox": {
+      "x": 133,
+      "y": 146,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_throw_rollup_02": {
+    "hurtbox": {
+      "x": 51,
+      "y": 94,
+      "w": 91,
+      "h": 85
+    },
+    "attach": {
+      "x": 158,
+      "y": 159
+    }
+  },
+  "dwarf_throw_rollup_03": {
+    "hurtbox": {
+      "x": 48,
+      "y": 75,
+      "w": 96,
+      "h": 104
+    },
+    "attach": {
+      "x": 161,
+      "y": 155
+    }
+  },
+  "dwarf_throw_rollup_04": {
+    "hurtbox": {
+      "x": 50,
+      "y": 93,
+      "w": 93,
+      "h": 86
+    },
+    "attach": {
+      "x": 159,
+      "y": 159
+    }
+  },
+  "dwarf_throw_anvil-drop_01": {
+    "hurtbox": {
+      "x": 55,
+      "y": 92,
+      "w": 82,
+      "h": 87
+    },
+    "attach": {
+      "x": 152,
+      "y": 159
+    },
+    "grabBox": {
+      "x": 133,
+      "y": 148,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_throw_anvil-drop_02": {
+    "hurtbox": {
+      "x": 63,
+      "y": 73,
+      "w": 67,
+      "h": 106
+    },
+    "attach": {
+      "x": 143,
+      "y": 121
+    }
+  },
+  "dwarf_throw_anvil-drop_03": {
+    "hurtbox": {
+      "x": 59,
+      "y": 75,
+      "w": 75,
+      "h": 104
+    },
+    "attach": {
+      "x": 148,
+      "y": 122
+    }
+  },
+  "dwarf_throw_anvil-drop_04": {
+    "hurtbox": {
+      "x": 64,
+      "y": 74,
+      "w": 64,
+      "h": 105
+    },
+    "attach": {
+      "x": 141,
+      "y": 121
+    }
+  },
+  "dwarf_throw_anvil-drop_05": {
+    "hurtbox": {
+      "x": 49,
+      "y": 62,
+      "w": 94,
+      "h": 117
+    },
+    "attach": {
+      "x": 159,
+      "y": 115
+    }
+  },
+  "dwarf_throw_anvil-drop_06": {
+    "hurtbox": {
+      "x": 46,
+      "y": 60,
+      "w": 100,
+      "h": 119
+    },
+    "attach": {
+      "x": 163,
+      "y": 114
+    }
+  },
+  "dwarf_throw_keg-press_01": {
+    "hurtbox": {
+      "x": 56,
+      "y": 90,
+      "w": 80,
+      "h": 89
+    },
+    "attach": {
+      "x": 151,
+      "y": 158
+    },
+    "grabBox": {
+      "x": 132,
+      "y": 147,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "dwarf_throw_keg-press_02": {
+    "hurtbox": {
+      "x": 62,
+      "y": 75,
+      "w": 68,
+      "h": 104
+    },
+    "attach": {
+      "x": 143,
+      "y": 122
+    }
+  },
+  "dwarf_throw_keg-press_03": {
+    "hurtbox": {
+      "x": 64,
+      "y": 44,
+      "w": 64,
+      "h": 135
+    },
+    "attach": {
+      "x": 96,
+      "y": 51
+    }
+  },
+  "dwarf_throw_keg-press_04": {
+    "hurtbox": {
+      "x": 62,
+      "y": 44,
+      "w": 69,
+      "h": 135
+    },
+    "attach": {
+      "x": 96,
+      "y": 51
+    }
+  },
+  "dwarf_throw_keg-press_05": {
+    "hurtbox": {
+      "x": 48,
+      "y": 87,
+      "w": 97,
+      "h": 92
+    },
+    "attach": {
+      "x": 161,
+      "y": 128
+    }
+  },
+  "dwarf_throw_keg-press_06": {
+    "hurtbox": {
+      "x": 59,
+      "y": 73,
+      "w": 74,
+      "h": 106
+    },
+    "attach": {
+      "x": 147,
+      "y": 121
+    }
+  },
+  "dwarf_grab_slip_01": {
+    "hurtbox": {
+      "x": 54,
+      "y": 73,
+      "w": 84,
+      "h": 106
+    },
+    "attach": {
+      "x": 153,
+      "y": 121
+    }
+  },
+  "dwarf_grab_slip_02": {
+    "hurtbox": {
+      "x": 50,
+      "y": 97,
+      "w": 92,
+      "h": 82
+    },
+    "attach": {
+      "x": 158,
+      "y": 133
+    }
+  }
+}

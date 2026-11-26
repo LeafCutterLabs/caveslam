@@ -1,0 +1,716 @@
+{
+  "mole_base_strike-light_01": {
+    "hurtbox": {
+      "x": 48,
+      "y": 35,
+      "w": 81,
+      "h": 144
+    }
+  },
+  "mole_base_strike-light_02": {
+    "hurtbox": {
+      "x": 35,
+      "y": 35,
+      "w": 102,
+      "h": 144
+    },
+    "hitbox": {
+      "x": 137,
+      "y": 77,
+      "w": 40,
+      "h": 37
+    }
+  },
+  "mole_base_strike-light_03": {
+    "hurtbox": {
+      "x": 48,
+      "y": 34,
+      "w": 80,
+      "h": 145
+    }
+  },
+  "mole_base_strike-heavy_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 35,
+      "w": 94,
+      "h": 144
+    }
+  },
+  "mole_base_strike-heavy_02": {
+    "hurtbox": {
+      "x": 30,
+      "y": 39,
+      "w": 111,
+      "h": 140
+    }
+  },
+  "mole_base_strike-heavy_03": {
+    "hurtbox": {
+      "x": 30,
+      "y": 43,
+      "w": 110,
+      "h": 136
+    },
+    "hitbox": {
+      "x": 140,
+      "y": 97,
+      "w": 44,
+      "h": 35
+    }
+  },
+  "mole_base_strike-heavy_04": {
+    "hurtbox": {
+      "x": 33,
+      "y": 35,
+      "w": 105,
+      "h": 144
+    }
+  },
+  "mole_base_strike-heavy_05": {
+    "hurtbox": {
+      "x": 51,
+      "y": 35,
+      "w": 76,
+      "h": 144
+    }
+  },
+  "mole_base_strike-low_01": {
+    "hurtbox": {
+      "x": 57,
+      "y": 104,
+      "w": 66,
+      "h": 75
+    }
+  },
+  "mole_base_strike-low_02": {
+    "hurtbox": {
+      "x": 48,
+      "y": 71,
+      "w": 80,
+      "h": 108
+    }
+  },
+  "mole_base_strike-low_03": {
+    "hurtbox": {
+      "x": 39,
+      "y": 68,
+      "w": 96,
+      "h": 111
+    },
+    "hitbox": {
+      "x": 135,
+      "y": 144,
+      "w": 38,
+      "h": 28
+    }
+  },
+  "mole_base_strike-low_04": {
+    "hurtbox": {
+      "x": 54,
+      "y": 83,
+      "w": 70,
+      "h": 96
+    }
+  },
+  "mole_base_strike-air_01": {
+    "hurtbox": {
+      "x": 53,
+      "y": 68,
+      "w": 73,
+      "h": 111
+    }
+  },
+  "mole_base_strike-air_02": {
+    "hurtbox": {
+      "x": 36,
+      "y": 82,
+      "w": 101,
+      "h": 97
+    },
+    "hitbox": {
+      "x": 137,
+      "y": 116,
+      "w": 40,
+      "h": 25
+    }
+  },
+  "mole_base_strike-air_03": {
+    "hurtbox": {
+      "x": 52,
+      "y": 63,
+      "w": 74,
+      "h": 116
+    }
+  },
+  "mole_grab_lockup_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 48,
+      "w": 113,
+      "h": 131
+    },
+    "attach": {
+      "x": 176,
+      "y": 104
+    }
+  },
+  "mole_grab_lockup_02": {
+    "hurtbox": {
+      "x": 47,
+      "y": 35,
+      "w": 98,
+      "h": 144
+    },
+    "attach": {
+      "x": 166,
+      "y": 97
+    },
+    "grabBox": {
+      "x": 148,
+      "y": 86,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_lockup_03": {
+    "hurtbox": {
+      "x": 40,
+      "y": 37,
+      "w": 112,
+      "h": 142
+    },
+    "attach": {
+      "x": 175,
+      "y": 98
+    }
+  },
+  "mole_grab_grab-behind_01": {
+    "hurtbox": {
+      "x": 50,
+      "y": 35,
+      "w": 93,
+      "h": 144
+    },
+    "attach": {
+      "x": 163,
+      "y": 97
+    }
+  },
+  "mole_grab_grab-behind_02": {
+    "hurtbox": {
+      "x": 41,
+      "y": 35,
+      "w": 110,
+      "h": 144
+    },
+    "attach": {
+      "x": 174,
+      "y": 97
+    },
+    "grabBox": {
+      "x": 156,
+      "y": 86,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_grab-behind_03": {
+    "hurtbox": {
+      "x": 47,
+      "y": 35,
+      "w": 99,
+      "h": 144
+    },
+    "attach": {
+      "x": 167,
+      "y": 97
+    }
+  },
+  "mole_grab_grab-ground_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 46,
+      "w": 112,
+      "h": 133
+    },
+    "attach": {
+      "x": 175,
+      "y": 151
+    }
+  },
+  "mole_grab_grab-ground_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 35,
+      "w": 112,
+      "h": 144
+    },
+    "attach": {
+      "x": 175,
+      "y": 148
+    },
+    "grabBox": {
+      "x": 157,
+      "y": 137,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_grab-ground_03": {
+    "hurtbox": {
+      "x": 49,
+      "y": 35,
+      "w": 94,
+      "h": 144
+    },
+    "attach": {
+      "x": 163,
+      "y": 148
+    }
+  },
+  "mole_grab_hold-struggle_01": {
+    "hurtbox": {
+      "x": 47,
+      "y": 35,
+      "w": 99,
+      "h": 144
+    },
+    "attach": {
+      "x": 167,
+      "y": 97
+    },
+    "grabBox": {
+      "x": 149,
+      "y": 86,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_hold-struggle_02": {
+    "hurtbox": {
+      "x": 53,
+      "y": 35,
+      "w": 87,
+      "h": 144
+    },
+    "attach": {
+      "x": 159,
+      "y": 97
+    }
+  },
+  "mole_grab_pin_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 114,
+      "w": 113,
+      "h": 65
+    },
+    "attach": {
+      "x": 176,
+      "y": 166
+    },
+    "grabBox": {
+      "x": 158,
+      "y": 155,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_pin_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 118,
+      "w": 113,
+      "h": 61
+    },
+    "attach": {
+      "x": 176,
+      "y": 167
+    }
+  },
+  "mole_grab_pin-hold_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 81,
+      "w": 112,
+      "h": 98
+    },
+    "attach": {
+      "x": 175,
+      "y": 159
+    },
+    "grabBox": {
+      "x": 157,
+      "y": 148,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_grab_pin-hold_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 82,
+      "w": 112,
+      "h": 97
+    },
+    "attach": {
+      "x": 175,
+      "y": 159
+    }
+  },
+  "mole_grab_reversal_01": {
+    "hurtbox": {
+      "x": 50,
+      "y": 35,
+      "w": 93,
+      "h": 144
+    },
+    "attach": {
+      "x": 163,
+      "y": 97
+    }
+  },
+  "mole_grab_reversal_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 85,
+      "w": 113,
+      "h": 94
+    },
+    "attach": {
+      "x": 176,
+      "y": 125
+    }
+  },
+  "mole_grab_reversal_03": {
+    "hurtbox": {
+      "x": 40,
+      "y": 38,
+      "w": 112,
+      "h": 141
+    },
+    "attach": {
+      "x": 175,
+      "y": 98
+    }
+  },
+  "mole_grab_reversal_04": {
+    "hurtbox": {
+      "x": 40,
+      "y": 65,
+      "w": 113,
+      "h": 114
+    },
+    "attach": {
+      "x": 176,
+      "y": 114
+    },
+    "grabBox": {
+      "x": 158,
+      "y": 103,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_throw_body-slam_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 40,
+      "w": 112,
+      "h": 139
+    },
+    "attach": {
+      "x": 175,
+      "y": 99
+    },
+    "grabBox": {
+      "x": 157,
+      "y": 88,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_throw_body-slam_02": {
+    "hurtbox": {
+      "x": 51,
+      "y": 34,
+      "w": 90,
+      "h": 145
+    },
+    "attach": {
+      "x": 160,
+      "y": 96
+    }
+  },
+  "mole_throw_body-slam_03": {
+    "hurtbox": {
+      "x": 43,
+      "y": 34,
+      "w": 107,
+      "h": 145
+    },
+    "attach": {
+      "x": 172,
+      "y": 96
+    }
+  },
+  "mole_throw_body-slam_04": {
+    "hurtbox": {
+      "x": 40,
+      "y": 74,
+      "w": 113,
+      "h": 105
+    },
+    "attach": {
+      "x": 176,
+      "y": 119
+    }
+  },
+  "mole_throw_body-slam_05": {
+    "hurtbox": {
+      "x": 40,
+      "y": 83,
+      "w": 113,
+      "h": 96
+    },
+    "attach": {
+      "x": 176,
+      "y": 124
+    }
+  },
+  "mole_throw_rollup_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 88,
+      "w": 113,
+      "h": 91
+    },
+    "attach": {
+      "x": 176,
+      "y": 160
+    },
+    "grabBox": {
+      "x": 158,
+      "y": 149,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_throw_rollup_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 72,
+      "w": 112,
+      "h": 107
+    },
+    "attach": {
+      "x": 175,
+      "y": 157
+    }
+  },
+  "mole_throw_rollup_03": {
+    "hurtbox": {
+      "x": 40,
+      "y": 77,
+      "w": 112,
+      "h": 102
+    },
+    "attach": {
+      "x": 175,
+      "y": 158
+    }
+  },
+  "mole_throw_rollup_04": {
+    "hurtbox": {
+      "x": 40,
+      "y": 98,
+      "w": 112,
+      "h": 81
+    },
+    "attach": {
+      "x": 175,
+      "y": 162
+    }
+  },
+  "mole_grab_slip_01": {
+    "hurtbox": {
+      "x": 52,
+      "y": 34,
+      "w": 88,
+      "h": 145
+    },
+    "attach": {
+      "x": 159,
+      "y": 96
+    }
+  },
+  "mole_grab_slip_02": {
+    "hurtbox": {
+      "x": 40,
+      "y": 65,
+      "w": 113,
+      "h": 114
+    },
+    "attach": {
+      "x": 176,
+      "y": 114
+    }
+  },
+  "mole_throw_tunnel-suplex_01": {
+    "hurtbox": {
+      "x": 40,
+      "y": 53,
+      "w": 113,
+      "h": 126
+    },
+    "attach": {
+      "x": 176,
+      "y": 152
+    }
+  },
+  "mole_throw_tunnel-suplex_02": {
+    "hurtbox": {
+      "x": 73,
+      "y": 164,
+      "w": 46,
+      "h": 15
+    },
+    "attach": {
+      "x": 131,
+      "y": 177
+    }
+  },
+  "mole_throw_tunnel-suplex_03": {
+    "hurtbox": {
+      "x": 61,
+      "y": 131,
+      "w": 71,
+      "h": 48
+    },
+    "attach": {
+      "x": 148,
+      "y": 170
+    }
+  },
+  "mole_throw_tunnel-suplex_04": {
+    "hurtbox": {
+      "x": 40,
+      "y": 44,
+      "w": 112,
+      "h": 135
+    },
+    "attach": {
+      "x": 175,
+      "y": 102
+    },
+    "grabBox": {
+      "x": 157,
+      "y": 91,
+      "w": 24,
+      "h": 22
+    }
+  },
+  "mole_throw_tunnel-suplex_05": {
+    "hurtbox": {
+      "x": 48,
+      "y": 35,
+      "w": 96,
+      "h": 144
+    },
+    "attach": {
+      "x": 165,
+      "y": 97
+    }
+  },
+  "mole_throw_tunnel-suplex_06": {
+    "hurtbox": {
+      "x": 40,
+      "y": 84,
+      "w": 112,
+      "h": 95
+    },
+    "attach": {
+      "x": 175,
+      "y": 125
+    }
+  },
+  "mole_throw_tunnel-suplex_07": {
+    "hurtbox": {
+      "x": 40,
+      "y": 102,
+      "w": 112,
+      "h": 77
+    },
+    "attach": {
+      "x": 175,
+      "y": 135
+    }
+  },
+  "mole_throw_tunnel-suplex_08": {
+    "hurtbox": {
+      "x": 40,
+      "y": 37,
+      "w": 112,
+      "h": 142
+    },
+    "attach": {
+      "x": 175,
+      "y": 98
+    }
+  },
+  "mole_throw_boulder-roll_01": {
+    "hurtbox": {
+      "x": 51,
+      "y": 69,
+      "w": 91,
+      "h": 110
+    },
+    "attach": {
+      "x": 161,
+      "y": 116
+    }
+  },
+  "mole_throw_boulder-roll_02": {
+    "hurtbox": {
+      "x": 60,
+      "y": 87,
+      "w": 72,
+      "h": 92
+    },
+    "attach": {
+      "x": 149,
+      "y": 126
+    }
+  },
+  "mole_throw_boulder-roll_03": {
+    "hurtbox": {
+      "x": 45,
+      "y": 66,
+      "w": 102,
+      "h": 113
+    },
+    "attach": {
+      "x": 168,
+      "y": 114
+    }
+  },
+  "mole_throw_boulder-roll_04": {
+    "hurtbox": {
+      "x": 47,
+      "y": 42,
+      "w": 98,
+      "h": 137
+    },
+    "attach": {
+      "x": 166,
+      "y": 101
+    },
+    "grabBox": {
+      "x": 148,
+      "y": 90,
+      "w": 24,
+      "h": 22
+    }
+  }
+}
