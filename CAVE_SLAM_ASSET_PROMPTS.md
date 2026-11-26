@@ -560,18 +560,17 @@ crouch and block jump straight to their end pose, the jump arc has big gaps,
 walking backward is just walk-fwd reversed, and turning around is an instant
 flip. This pass adds in-between frames and four new movement animations.
 
-**The game already supports these.** It counts the frames on disk, so as soon
-as the new files exist it plays all of them at the rate below. Nothing breaks
-while a set is half finished, but finish one animation completely before
-packing it, because the game plays frames 01, 02, 03… and stops at the first
-missing number.
+The local server discovers new art on refresh. Stage and install one complete
+animation at a time. The game reads frames in order, and a gap can cause an old
+atlas frame or a placeholder to appear during playback.
 
 **Rules for this pass (on top of Section 1):**
 
 1. **Renumber, don't append.** Each animation below lists its new frame count
-   and says which new frame number each existing frame becomes. Rename the
-   existing file to its new number first (for example `goblin_base_idle_02.png`
-   becomes `goblin_base_idle_04.png`), then generate only the missing numbers.
+   and says which new frame number each existing frame becomes. Copy the kept
+   frames to a working folder outside `assets/` and renumber the copies first
+   (for example `goblin_base_idle_02.png` becomes `goblin_base_idle_04.png`).
+   Generate only the missing numbers, then install the complete sequence.
    Never redraw a frame that is kept.
 2. For each new in-between, attach the character sheet **plus the kept frames
    on both sides of it** (the one before and the one after), and describe it as
@@ -632,9 +631,12 @@ stalactite-hang 2, wall-jump 2).
 | Group | Goblin | Dwarf | Mole | Lizard |
 | --- | --- | --- | --- | --- |
 | Section 16 total | 112 | 115 | 115 | 117 |
-| Tier 1 smooth movement | +34 | +34 | +34 | +34 |
+| Tier 1 net additions | +29 | +29 | +29 | +29 |
 | Tier 2 smooth movement | +10 | +10 | +10 | +10 |
-| **New total** | **156** | **159** | **159** | **161** |
+| **New total** | **151** | **154** | **154** | **156** |
+
+Each wrestler needs 44 renders. Five of the Tier 1 walk-forward renders
+replace existing files, so each wrestler gains 39 files overall.
 
 Example `<character>_anims.json` entries after this pass:
 
