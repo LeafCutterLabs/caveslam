@@ -1,6 +1,6 @@
 {
   "frames": {
-    "lizard_throw_body-slam_01": {
+    "lizard_grab_grab-behind_01": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -20,7 +20,7 @@
         "h": 192
       }
     },
-    "lizard_throw_body-slam_02": {
+    "lizard_grab_grab-behind_02": {
       "frame": {
         "x": 194,
         "y": 0,
@@ -40,7 +40,7 @@
         "h": 192
       }
     },
-    "lizard_throw_body-slam_03": {
+    "lizard_grab_grab-behind_03": {
       "frame": {
         "x": 388,
         "y": 0,
@@ -60,7 +60,7 @@
         "h": 192
       }
     },
-    "lizard_throw_body-slam_04": {
+    "lizard_grab_grab-ground_01": {
       "frame": {
         "x": 582,
         "y": 0,
@@ -80,7 +80,7 @@
         "h": 192
       }
     },
-    "lizard_throw_body-slam_05": {
+    "lizard_grab_grab-ground_02": {
       "frame": {
         "x": 776,
         "y": 0,
@@ -100,7 +100,7 @@
         "h": 192
       }
     },
-    "lizard_throw_rollup_01": {
+    "lizard_grab_grab-ground_03": {
       "frame": {
         "x": 970,
         "y": 0,
@@ -120,7 +120,7 @@
         "h": 192
       }
     },
-    "lizard_throw_rollup_02": {
+    "lizard_grab_hold-struggle_01": {
       "frame": {
         "x": 1164,
         "y": 0,
@@ -140,7 +140,7 @@
         "h": 192
       }
     },
-    "lizard_throw_rollup_03": {
+    "lizard_grab_hold-struggle_02": {
       "frame": {
         "x": 1358,
         "y": 0,
@@ -160,7 +160,7 @@
         "h": 192
       }
     },
-    "lizard_throw_rollup_04": {
+    "lizard_grab_lockup_01": {
       "frame": {
         "x": 1552,
         "y": 0,
@@ -180,7 +180,7 @@
         "h": 192
       }
     },
-    "lizard_thrown_lifted_01": {
+    "lizard_grab_lockup_02": {
       "frame": {
         "x": 1746,
         "y": 0,
@@ -200,7 +200,7 @@
         "h": 192
       }
     },
-    "lizard_thrown_upside-down_01": {
+    "lizard_grab_lockup_03": {
       "frame": {
         "x": 0,
         "y": 194,
@@ -220,7 +220,7 @@
         "h": 192
       }
     },
-    "lizard_thrown_overhead_01": {
+    "lizard_grab_pin-hold_01": {
       "frame": {
         "x": 194,
         "y": 194,
@@ -240,7 +240,7 @@
         "h": 192
       }
     },
-    "lizard_thrown_suplex-arc_01": {
+    "lizard_grab_pin-hold_02": {
       "frame": {
         "x": 388,
         "y": 194,
@@ -260,10 +260,810 @@
         "h": 192
       }
     },
-    "lizard_thrown_headlock-bent_01": {
+    "lizard_grab_pin_01": {
       "frame": {
         "x": 582,
         "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_pin_02": {
+      "frame": {
+        "x": 776,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_reversal_01": {
+      "frame": {
+        "x": 970,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_reversal_02": {
+      "frame": {
+        "x": 1164,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_reversal_03": {
+      "frame": {
+        "x": 1358,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_reversal_04": {
+      "frame": {
+        "x": 1552,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_slip_01": {
+      "frame": {
+        "x": 1746,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_grab_slip_02": {
+      "frame": {
+        "x": 0,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_01": {
+      "frame": {
+        "x": 194,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_02": {
+      "frame": {
+        "x": 388,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_03": {
+      "frame": {
+        "x": 582,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_04": {
+      "frame": {
+        "x": 776,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_05": {
+      "frame": {
+        "x": 970,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_basilisk-bomb_06": {
+      "frame": {
+        "x": 1164,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_body-slam_01": {
+      "frame": {
+        "x": 1358,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_body-slam_02": {
+      "frame": {
+        "x": 1552,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_body-slam_03": {
+      "frame": {
+        "x": 1746,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_body-slam_04": {
+      "frame": {
+        "x": 0,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_body-slam_05": {
+      "frame": {
+        "x": 194,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_rollup_01": {
+      "frame": {
+        "x": 388,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_rollup_02": {
+      "frame": {
+        "x": 582,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_rollup_03": {
+      "frame": {
+        "x": 776,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_rollup_04": {
+      "frame": {
+        "x": 970,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_01": {
+      "frame": {
+        "x": 1164,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_02": {
+      "frame": {
+        "x": 1358,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_03": {
+      "frame": {
+        "x": 1552,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_04": {
+      "frame": {
+        "x": 1746,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_05": {
+      "frame": {
+        "x": 0,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_06": {
+      "frame": {
+        "x": 194,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_07": {
+      "frame": {
+        "x": 388,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_throw_tail-whip-suplex_08": {
+      "frame": {
+        "x": 582,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_headlock-bent_01": {
+      "frame": {
+        "x": 776,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_kick-out_01": {
+      "frame": {
+        "x": 970,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_lifted_01": {
+      "frame": {
+        "x": 1164,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_overhead_01": {
+      "frame": {
+        "x": 1358,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_pinned-struggle_01": {
+      "frame": {
+        "x": 1552,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_pinned_01": {
+      "frame": {
+        "x": 1746,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_slam-impact_01": {
+      "frame": {
+        "x": 0,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_spin_01": {
+      "frame": {
+        "x": 194,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_squeezed_01": {
+      "frame": {
+        "x": 388,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "lizard_thrown_suplex-arc_01": {
+      "frame": {
+        "x": 582,
+        "y": 970,
         "w": 192,
         "h": 192
       },
@@ -283,7 +1083,7 @@
     "lizard_thrown_tail-wrapped_01": {
       "frame": {
         "x": 776,
-        "y": 194,
+        "y": 970,
         "w": 192,
         "h": 192
       },
@@ -300,10 +1100,10 @@
         "h": 192
       }
     },
-    "lizard_thrown_spin_01": {
+    "lizard_thrown_upside-down_01": {
       "frame": {
         "x": 970,
-        "y": 194,
+        "y": 970,
         "w": 192,
         "h": 192
       },
@@ -320,110 +1120,50 @@
         "h": 192
       }
     },
-    "lizard_thrown_squeezed_01": {
+    "lizard_portrait_hurt_01": {
       "frame": {
-        "x": 1164,
-        "y": 194,
-        "w": 192,
-        "h": 192
+        "x": 0,
+        "y": 1164,
+        "w": 160,
+        "h": 160
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 192,
-        "h": 192
+        "w": 160,
+        "h": 160
       },
       "sourceSize": {
-        "w": 192,
-        "h": 192
+        "w": 160,
+        "h": 160
       }
     },
-    "lizard_thrown_slam-impact_01": {
+    "lizard_portrait_icon_01": {
       "frame": {
-        "x": 1358,
-        "y": 194,
-        "w": 192,
-        "h": 192
+        "x": 162,
+        "y": 1164,
+        "w": 64,
+        "h": 64
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 192,
-        "h": 192
+        "w": 64,
+        "h": 64
       },
       "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_thrown_pinned_01": {
-      "frame": {
-        "x": 1552,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_thrown_pinned-struggle_01": {
-      "frame": {
-        "x": 1746,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_thrown_kick-out_01": {
-      "frame": {
-        "x": 0,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
+        "w": 64,
+        "h": 64
       }
     },
     "lizard_portrait_select_01": {
       "frame": {
-        "x": 194,
-        "y": 388,
+        "x": 228,
+        "y": 1164,
         "w": 160,
         "h": 160
       },
@@ -442,8 +1182,8 @@
     },
     "lizard_portrait_vs_01": {
       "frame": {
-        "x": 356,
-        "y": 388,
+        "x": 390,
+        "y": 1164,
         "w": 320,
         "h": 400
       },
@@ -458,326 +1198,6 @@
       "sourceSize": {
         "w": 320,
         "h": 400
-      }
-    },
-    "lizard_portrait_icon_01": {
-      "frame": {
-        "x": 678,
-        "y": 388,
-        "w": 64,
-        "h": 64
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 64,
-        "h": 64
-      },
-      "sourceSize": {
-        "w": 64,
-        "h": 64
-      }
-    },
-    "lizard_portrait_hurt_01": {
-      "frame": {
-        "x": 744,
-        "y": 388,
-        "w": 160,
-        "h": 160
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 160,
-        "h": 160
-      },
-      "sourceSize": {
-        "w": 160,
-        "h": 160
-      }
-    },
-    "lizard_throw_tail-whip-suplex_01": {
-      "frame": {
-        "x": 906,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_02": {
-      "frame": {
-        "x": 1100,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_03": {
-      "frame": {
-        "x": 1294,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_04": {
-      "frame": {
-        "x": 1488,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_05": {
-      "frame": {
-        "x": 1682,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_06": {
-      "frame": {
-        "x": 0,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_07": {
-      "frame": {
-        "x": 194,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_tail-whip-suplex_08": {
-      "frame": {
-        "x": 388,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_01": {
-      "frame": {
-        "x": 582,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_02": {
-      "frame": {
-        "x": 776,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_03": {
-      "frame": {
-        "x": 970,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_04": {
-      "frame": {
-        "x": 1164,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_05": {
-      "frame": {
-        "x": 1358,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "lizard_throw_basilisk-bomb_06": {
-      "frame": {
-        "x": 1552,
-        "y": 790,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
       }
     }
   },
@@ -785,8 +1205,8 @@
     "image": "lizard_atlas-1.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1938,
-      "h": 982
+      "w": 1940,
+      "h": 1590
     },
     "scale": "1"
   }

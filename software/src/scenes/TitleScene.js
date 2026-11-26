@@ -5,6 +5,7 @@ import { BUTTONS, loadBindings, keyLabel } from '../input.js';
 
 const ITEMS = ['2 PLAYER FIGHT', 'PRACTICE', 'SETTINGS: KEYS', 'FRAME INSPECTOR', 'CONTROLS'];
 const TIPS = [
+  'Double-tap forward (and hold) to run.',
   'Grab near opponent: lock-up. Press GRAB again when the ring closes.',
   '  Hold forward = signature slam, back = slam behind / 2nd signature,',
   '  down = roll-up pin, nothing = body slam. Perfect press as defender = REVERSAL.',

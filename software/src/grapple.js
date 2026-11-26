@@ -1,6 +1,8 @@
 // Grapples: lock-ups with the timing ring, reversals, throws, pins, Mole Man's
 // boulder roll and Goblin's stalactite drop. The fight scene owns one manager.
 import { FLOOR_Y, W, TUNING, CHARACTERS } from './config.js';
+import { grabBox, hurtBox, overlap } from './hitboxes.js';
+import { animMeta } from './assets.js';
 
 // ---------- throw scripts ----------
 // Each step: attacker shows frame f of `anim` (default the throw), victim shows
@@ -125,7 +127,9 @@ export class GrappleManager {
         { anim: 'grab_grab-ground', f: 2, v: 'lifted', dx: 46, dy: -20, t: 0.2, end: 'standStun' },
       ], null);
     }
-    if (dist > this.reach(att) || !opp.grabbable || Math.abs(opp.y - att.y) > 40) {
+    const gb = grabBox(att, opp.facing === att.facing ? 'grab-behind' : 'lockup');
+    const inReach = gb ? overlap(gb, hurtBox(opp)) : dist <= this.reach(att);
+    if (!inReach || !opp.grabbable || Math.abs(opp.y - att.y) > 40) {
       att.setState('whiff'); att.showFrame('grab_lockup', 0);
       return;
     }
@@ -248,7 +252,8 @@ export class GrappleManager {
     // attacker loses the lock-up: shoved back, briefly open
     att.state = 'idle';
     att.vx = -att.facing * 260; att.stun = 0.45;
-    att.setState('hit', 'hit-high');
+    att.setState('hit', 'grab_lockup-lose');
+    if (!animMeta(att.cid, 'grab_lockup-lose').next) this.scene.time.delayedCall(120, () => { if (att.state === 'hit') att.play('hit-high'); });
     def.setState('idle', 'grab_lockup-win');
     this.scene.time.delayedCall(250, () => { if (def.state === 'idle') def.play('idle'); });
     this.scene.sfx('block');

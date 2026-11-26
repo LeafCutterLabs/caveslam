@@ -450,6 +450,11 @@ export function baseCount(art, cid, a, d, rate, ov = {}) {
 }
 
 // Does this wrestler have real frames for a new movement animation?
+const ALIASES = ['run', 'block-crouch', 'hit-low', 'dizzy', 'webbed', 'block-overhead', 'lockup-win', 'lockup-lose'];
+const META = {};
+// Extra touches from anims.json for an animation key like 'dizzy' or 'grab_lockup-lose'.
+export function animMeta(cid, key) { return META[`${cid}_${key}`] || {}; }
+
 export function hasExtra(art, cid, a) { return art.seq(`${cid}_base_${a}`, 1).length > 0; }
 
 export function buildAnimations(scene, art) {
@@ -484,8 +489,8 @@ export function buildAnimations(scene, art) {
     const walk = walkAnim.frames.map((f) => ({ key: f.textureKey, frame: f.textureFrame }));
     mkAnim(scene, `${cid}_walk-back`, [...walk].reverse(), walkAnim.frameRate, -1);
     mkAnim(scene, `${cid}_run`, walk, walkAnim.frameRate * 2, -1);
-    const crouch = frames('base', 'crouch', 2);
-    mkAnim(scene, `${cid}_block-crouch`, [crouch[1]], 1, 0);
+    const crouch = scene.anims.get(`${cid}_crouch`).frames.at(-1);
+    mkAnim(scene, `${cid}_block-crouch`, [{ key: crouch.textureKey, frame: crouch.textureFrame }], 1, 0);
     mkAnim(scene, `${cid}_hit-low`, frames('base', 'hit-high', 2), 10, 0);
     const kd = frames('base', 'knockdown', 4);
     mkAnim(scene, `${cid}_getup`, [kd[2], kd[1], kd[0]], 9, 0);
@@ -502,6 +507,21 @@ export function buildAnimations(scene, art) {
     const lock = frames('grab', 'lockup', 3);
     mkAnim(scene, `${cid}_grab_lockup-win`, [lock[2]], 1, 0);
     mkAnim(scene, `${cid}_grab_lockup-lose`, [lock[1]], 1, 0);
+    // Extra animations defined in <char>_anims.json (run, crouch block, hit-low,
+    // dizzy, webbed, overhead block, lock-up win/lose). They point at existing
+    // frames and add touches (lean, offset, effect, follow-on animation).
+    for (const alias of ALIASES) {
+      const o = ov[`${cid}_${alias}`];
+      const key = alias.startsWith('lockup-') ? `${cid}_grab_${alias}` : `${cid}_${alias}`;
+      META[key] = {};
+      if (!o || !o.prefix) continue;
+      const nums = Array.isArray(o.frameNumbers) && o.frameNumbers.length ? o.frameNumbers
+        : Array.from({ length: o.frames || 1 }, (_, i) => i + 1);
+      const fr = nums.map((i) => art.get(`${o.prefix}${pad(i)}`));
+      if (fr.some((f) => !f)) continue;
+      mkAnim(scene, key, fr, o.frameRate || 10, o.repeat ?? 0);
+      META[key] = { rotate: o.rotate, offsetX: o.offsetX, fx: o.fx, next: o.next, speed: o.speed };
+    }
   }
   // fx anims
   for (const [name, n, w, h] of FX_FILES) {

@@ -2,7 +2,8 @@
 // Grapples, throws and pins are run by the fight scene (grapple.js), which puts
 // the fighter in the 'script' state while it drives the sprite.
 import { CHARACTERS, FLOOR_Y, WALL_L, WALL_R, ORIGIN_X, ORIGIN_Y, TUNING, GRIPS } from './config.js';
-import { hasExtra } from './assets.js';
+import { hasExtra, animMeta } from './assets.js';
+import { hitBox, hurtBox, overlap, strikeHasBoxes } from './hitboxes.js';
 
 const NEUTRAL = new Set(['idle', 'walk', 'crouch', 'block', 'land']);
 // states an opponent can be hit by strikes in
@@ -50,7 +51,17 @@ export class Fighter {
     this.animKey = key;
     this.sprite.setAngle(0);
     this.sprite.play(full, !restart);
+    // anims.json can chain one animation into another (lock-up lose -> hit-high)
+    const next = animMeta(this.cid, key).next;
+    if (next) {
+      this.sprite.once('animationcomplete', (a) => {
+        if (a.key === full && this.animKey === key) this.play(next.replace(`${this.cid}_`, ''), true);
+      });
+    }
   }
+
+  // sideways nudge from anims.json (offsetX), mirrored with the facing
+  get offsetX() { return (animMeta(this.cid, this.animKey).offsetX || 0) * this.facing; }
 
   setState(s, anim, restart = true) {
     // let a turn-around finish before idle/walk take over the sprite
@@ -120,12 +131,26 @@ export class Fighter {
           if (this.state !== 'block') this.setState('block', 'block');
           break;
         }
+        // double-tap forward to run (while forward stays held)
+        const fwdTap = this.facing > 0 ? inp.pressed.right : inp.pressed.left;
+        if (fwdTap) {
+          const now = this.scene.time.now;
+          if (now - (this.lastFwdTap || -1e9) < 260) this.running = true;
+          this.lastFwdTap = now;
+        }
+        if (!fwd) this.running = false;
         if (fwd || back) {
           const oilBoost = this.oiledT > 0 ? 1.1 : 1;
-          this.vx = (fwd ? 1 : -0.7) * this.speed * this.facing * oilBoost;
-          const a = fwd ? 'walk-fwd' : 'walk-back';
-          if (this.state !== 'walk' || this.animKey !== a) this.setState('walk', a, false);
+          const run = this.running && fwd;
+          const runMul = run ? (animMeta(this.cid, 'run').speed || 2) * 0.8 : 1;
+          this.vx = (fwd ? 1 : -0.7) * this.speed * this.facing * oilBoost * runMul;
+          const a = run ? 'run' : fwd ? 'walk-fwd' : 'walk-back';
+          if (this.state !== 'walk' || this.animKey !== a) {
+            this.setState('walk', a, false);
+            if (run && this.turnT <= 0) this.sprite.setAngle((animMeta(this.cid, 'run').rotate || 0) * this.facing);
+          }
         } else {
+          this.running = false;
           this.vx = 0;
           if (this.state !== 'idle') this.setState('idle', 'idle', false);
         }
@@ -178,14 +203,14 @@ export class Fighter {
         break;
       case 'dizzy':
         this.vx = 0;
-        this.sprite.setAngle(Math.sin(this.t * 14) * 6);
+        this.sprite.setAngle(Math.sin(this.t * 14) * (animMeta(this.cid, 'dizzy').rotate ?? 6));
         this.t += this.mashed(inp) * 0.05;
         if (this.t > 1.4) { this.sprite.setAngle(0); this.setState('idle', 'idle'); }
         break;
       case 'webbed':
         this.vx = 0;
         this.webbedT -= dt + this.mashed(inp) * 0.12;
-        this.sprite.x = this.x + Math.sin(this.t * 40) * 2;
+        this.sprite.x = this.x + this.offsetX + Math.sin(this.t * 40) * 2;
         if (this.webbedT <= 0) { this.scene.events.emit('webfree', this); this.setState('idle', 'idle'); }
         break;
       case 'oilapply':
@@ -243,7 +268,7 @@ export class Fighter {
   }
 
   sync() {
-    if (this.state !== 'webbed') this.sprite.x = this.x;
+    if (this.state !== 'webbed') this.sprite.x = this.x + this.offsetX;
     this.sprite.y = this.y;
     this.sprite.setFlipX(this.facing < 0);
     this.shadow.setPosition(this.x, FLOOR_Y + 2);
@@ -327,6 +352,14 @@ export class Fighter {
 
   checkHit(opp, anim) {
     if (this.hitDone || !opp) return;
+    // Real boxes: the strike connects on a frame whose hitbox touches the
+    // opponent's hurtbox (hitboxes.json). Without data, the old reach check.
+    if (strikeHasBoxes(this, anim)) {
+      const hb = hitBox(this);
+      if (!hb || !opp.hittable) return;
+      if (overlap(hb, hurtBox(opp))) { this.hitDone = true; opp.takeHit(this, anim); }
+      return;
+    }
     const s = STRIKES[anim];
     const cur = this.sprite.anims.currentFrame;
     if (!cur || cur.index < s.active) return;

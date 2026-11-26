@@ -6,6 +6,7 @@ import { GrappleManager } from '../grapple.js';
 import { CaveEvents } from '../events.js';
 import { Stage } from '../stage.js';
 import { getKing } from './common.js';
+import { BoxDebug } from '../hitboxes.js';
 
 const EMPTY = { state: {}, pressed: {} };
 const TXT = { font: 'bold 14px monospace', color: '#f7dab5', stroke: '#3a2018', strokeThickness: 4 };
@@ -41,6 +42,8 @@ export class FightScene extends Phaser.Scene {
       kb.on('keydown-ONE', () => this.caveEvents.trigger('rumble'));
       kb.on('keydown-TWO', () => this.caveEvents.trigger('spider'));
       kb.on('keydown-THREE', () => this.caveEvents.trigger('oil'));
+      this.boxDebug = new BoxDebug(this);
+      kb.on('keydown-B', () => this.boxDebug.toggle());
       kb.on('keydown-I', () => { this.scene.pause(); this.scene.launch('Inspect', { cid: this.fighters[0].cid, returnTo: 'Fight' }); });
     }
     this.startRound();
@@ -137,7 +140,7 @@ export class FightScene extends Phaser.Scene {
         : this.add.text(0, 0, `P${i + 1}`, { ...TXT, color: i ? '#9fe870' : '#ff9a52' }).setOrigin(0.5).setDepth(30);
     });
     if (this.practice) {
-      this.add.text(W / 2, H - 6, 'PRACTICE  E random event (1 cave-in, 2 spider, 3 oil)  I frame inspector  Esc pause/quit', { font: '12px monospace', color: '#f7dab5', stroke: '#3a2018', strokeThickness: 3 }).setOrigin(0.5, 1).setDepth(92);
+      this.add.text(W / 2, H - 6, 'PRACTICE  E random event (1 cave-in, 2 spider, 3 oil)  B hitboxes  I frame inspector  Esc pause/quit', { font: '12px monospace', color: '#f7dab5', stroke: '#3a2018', strokeThickness: 3 }).setOrigin(0.5, 1).setDepth(92);
       this.timerText.setText('--');
     }
   }
@@ -288,5 +291,6 @@ export class FightScene extends Phaser.Scene {
       this.timerText.setText(String(Math.ceil(this.timeLeft)));
     }
     this.drawHud();
+    if (this.boxDebug) this.boxDebug.draw(this.fighters);
   }
 }

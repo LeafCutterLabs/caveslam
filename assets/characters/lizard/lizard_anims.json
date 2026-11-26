@@ -3,40 +3,40 @@
     "key": "lizard_block",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_block_",
-    "frames": 2,
-    "frameRate": 12,
+    "frames": 3,
+    "frameRate": 22,
     "repeat": 0
   },
   {
     "key": "lizard_crouch",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_crouch_",
-    "frames": 2,
-    "frameRate": 10,
+    "frames": 4,
+    "frameRate": 24,
     "repeat": 0
   },
   {
     "key": "lizard_hit-high",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_hit-high_",
-    "frames": 2,
-    "frameRate": 10,
+    "frames": 4,
+    "frameRate": 16,
     "repeat": 0
   },
   {
     "key": "lizard_idle",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_idle_",
-    "frames": 2,
-    "frameRate": 3,
+    "frames": 6,
+    "frameRate": 8,
     "repeat": -1
   },
   {
     "key": "lizard_jump",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_jump_",
-    "frames": 5,
-    "frameRate": 10,
+    "frames": 8,
+    "frameRate": 14,
     "repeat": 0
   },
   {
@@ -83,8 +83,8 @@
     "key": "lizard_stalactite-hang",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_stalactite-hang_",
-    "frames": 2,
-    "frameRate": 5,
+    "frames": 4,
+    "frameRate": 6,
     "repeat": -1
   },
   {
@@ -123,8 +123,8 @@
     "key": "lizard_walk-fwd",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_walk-fwd_",
-    "frames": 6,
-    "frameRate": 10,
+    "frames": 10,
+    "frameRate": 15,
     "repeat": -1
   },
   {
@@ -139,8 +139,8 @@
     "key": "lizard_wall-jump",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_wall-jump_",
-    "frames": 3,
-    "frameRate": 10,
+    "frames": 5,
+    "frameRate": 18,
     "repeat": 0
   },
   {
@@ -153,7 +153,7 @@
   },
   {
     "key": "lizard_grab-behind",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_grab-behind_",
     "frames": 3,
     "frameRate": 10,
@@ -161,7 +161,7 @@
   },
   {
     "key": "lizard_grab-ground",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_grab-ground_",
     "frames": 3,
     "frameRate": 10,
@@ -169,7 +169,7 @@
   },
   {
     "key": "lizard_hold-struggle",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_hold-struggle_",
     "frames": 2,
     "frameRate": 7,
@@ -177,7 +177,7 @@
   },
   {
     "key": "lizard_lockup",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_lockup_",
     "frames": 3,
     "frameRate": 10,
@@ -185,7 +185,7 @@
   },
   {
     "key": "lizard_pin-hold",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_pin-hold_",
     "frames": 2,
     "frameRate": 7,
@@ -193,7 +193,7 @@
   },
   {
     "key": "lizard_pin",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_pin_",
     "frames": 2,
     "frameRate": 7,
@@ -201,7 +201,7 @@
   },
   {
     "key": "lizard_reversal",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_reversal_",
     "frames": 4,
     "frameRate": 10,
@@ -209,7 +209,7 @@
   },
   {
     "key": "lizard_slip",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_slip_",
     "frames": 2,
     "frameRate": 10,
@@ -330,18 +330,17 @@
   {
     "key": "lizard_walk-back",
     "atlas": "lizard_atlas-0",
-    "prefix": "lizard_base_walk-fwd_",
-    "frames": 6,
-    "frameRate": 10,
-    "repeat": -1,
-    "reverse": true
+    "prefix": "lizard_base_walk-back_",
+    "frames": 10,
+    "frameRate": 15,
+    "repeat": -1
   },
   {
     "key": "lizard_run",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_walk-fwd_",
-    "frames": 6,
-    "frameRate": 10,
+    "frames": 10,
+    "frameRate": 15,
     "repeat": -1,
     "speed": 2,
     "rotate": 5
@@ -354,7 +353,7 @@
     "frameRate": 10,
     "repeat": 0,
     "frameNumbers": [
-      2
+      4
     ]
   },
   {
@@ -368,11 +367,10 @@
   {
     "key": "lizard_getup",
     "atlas": "lizard_atlas-0",
-    "prefix": "lizard_base_knockdown_",
-    "frames": 3,
-    "frameRate": 10,
+    "prefix": "lizard_base_getup_",
+    "frames": 4,
+    "frameRate": 12,
     "repeat": 0,
-    "reverse": true,
     "next": "lizard_idle"
   },
   {
@@ -390,7 +388,7 @@
   },
   {
     "key": "lizard_lockup-win",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_lockup_",
     "frames": 1,
     "frameRate": 10,
@@ -402,7 +400,7 @@
   },
   {
     "key": "lizard_lockup-lose",
-    "atlas": "lizard_atlas-0",
+    "atlas": "lizard_atlas-1",
     "prefix": "lizard_grab_lockup_",
     "frames": 1,
     "frameRate": 10,
@@ -417,8 +415,8 @@
     "key": "lizard_block-overhead",
     "atlas": "lizard_atlas-0",
     "prefix": "lizard_base_block_",
-    "frames": 2,
-    "frameRate": 12,
+    "frames": 3,
+    "frameRate": 22,
     "repeat": 0,
     "fx": "fx_rock-shatter"
   },
@@ -450,5 +448,21 @@
     "frames": 6,
     "frameRate": 10,
     "repeat": 0
+  },
+  {
+    "key": "lizard_land",
+    "prefix": "lizard_base_land_",
+    "frames": 2,
+    "frameRate": 14,
+    "repeat": 0,
+    "atlas": "lizard_atlas-0"
+  },
+  {
+    "key": "lizard_turn",
+    "prefix": "lizard_base_turn_",
+    "frames": 3,
+    "frameRate": 18,
+    "repeat": 0,
+    "atlas": "lizard_atlas-0"
   }
 ]

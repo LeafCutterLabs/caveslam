@@ -1,6 +1,6 @@
 {
   "frames": {
-    "dwarf_throw_body-slam_01": {
+    "dwarf_grab_grab-behind_01": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -20,7 +20,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_body-slam_02": {
+    "dwarf_grab_grab-behind_02": {
       "frame": {
         "x": 194,
         "y": 0,
@@ -40,7 +40,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_body-slam_03": {
+    "dwarf_grab_grab-behind_03": {
       "frame": {
         "x": 388,
         "y": 0,
@@ -60,7 +60,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_body-slam_04": {
+    "dwarf_grab_grab-ground_01": {
       "frame": {
         "x": 582,
         "y": 0,
@@ -80,7 +80,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_body-slam_05": {
+    "dwarf_grab_grab-ground_02": {
       "frame": {
         "x": 776,
         "y": 0,
@@ -100,7 +100,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_rollup_01": {
+    "dwarf_grab_grab-ground_03": {
       "frame": {
         "x": 970,
         "y": 0,
@@ -120,7 +120,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_rollup_02": {
+    "dwarf_grab_hold-struggle_01": {
       "frame": {
         "x": 1164,
         "y": 0,
@@ -140,7 +140,7 @@
         "h": 192
       }
     },
-    "dwarf_throw_rollup_03": {
+    "dwarf_grab_hold-struggle_02": {
       "frame": {
         "x": 1358,
         "y": 0,
@@ -160,10 +160,250 @@
         "h": 192
       }
     },
-    "dwarf_throw_rollup_04": {
+    "dwarf_grab_lockup_01": {
       "frame": {
         "x": 1552,
         "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_lockup_02": {
+      "frame": {
+        "x": 1746,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_lockup_03": {
+      "frame": {
+        "x": 0,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_pin-hold_01": {
+      "frame": {
+        "x": 194,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_pin-hold_02": {
+      "frame": {
+        "x": 388,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_pin_01": {
+      "frame": {
+        "x": 582,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_pin_02": {
+      "frame": {
+        "x": 776,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_reversal_01": {
+      "frame": {
+        "x": 970,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_reversal_02": {
+      "frame": {
+        "x": 1164,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_reversal_03": {
+      "frame": {
+        "x": 1358,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_reversal_04": {
+      "frame": {
+        "x": 1552,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_slip_01": {
+      "frame": {
+        "x": 1746,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_grab_slip_02": {
+      "frame": {
+        "x": 0,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -182,8 +422,8 @@
     },
     "dwarf_throw_anvil-drop_01": {
       "frame": {
-        "x": 1746,
-        "y": 0,
+        "x": 194,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -202,8 +442,8 @@
     },
     "dwarf_throw_anvil-drop_02": {
       "frame": {
-        "x": 0,
-        "y": 194,
+        "x": 388,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -222,8 +462,8 @@
     },
     "dwarf_throw_anvil-drop_03": {
       "frame": {
-        "x": 194,
-        "y": 194,
+        "x": 582,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -242,8 +482,8 @@
     },
     "dwarf_throw_anvil-drop_04": {
       "frame": {
-        "x": 388,
-        "y": 194,
+        "x": 776,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -262,8 +502,8 @@
     },
     "dwarf_throw_anvil-drop_05": {
       "frame": {
-        "x": 582,
-        "y": 194,
+        "x": 970,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -282,8 +522,108 @@
     },
     "dwarf_throw_anvil-drop_06": {
       "frame": {
-        "x": 776,
-        "y": 194,
+        "x": 1164,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_body-slam_01": {
+      "frame": {
+        "x": 1358,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_body-slam_02": {
+      "frame": {
+        "x": 1552,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_body-slam_03": {
+      "frame": {
+        "x": 1746,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_body-slam_04": {
+      "frame": {
+        "x": 0,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_body-slam_05": {
+      "frame": {
+        "x": 194,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -302,8 +642,8 @@
     },
     "dwarf_throw_keg-press_01": {
       "frame": {
-        "x": 970,
-        "y": 194,
+        "x": 388,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -322,8 +662,8 @@
     },
     "dwarf_throw_keg-press_02": {
       "frame": {
-        "x": 1164,
-        "y": 194,
+        "x": 582,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -342,8 +682,8 @@
     },
     "dwarf_throw_keg-press_03": {
       "frame": {
-        "x": 1358,
-        "y": 194,
+        "x": 776,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -362,8 +702,8 @@
     },
     "dwarf_throw_keg-press_04": {
       "frame": {
-        "x": 1552,
-        "y": 194,
+        "x": 970,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -382,8 +722,8 @@
     },
     "dwarf_throw_keg-press_05": {
       "frame": {
-        "x": 1746,
-        "y": 194,
+        "x": 1164,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -402,8 +742,8 @@
     },
     "dwarf_throw_keg-press_06": {
       "frame": {
-        "x": 0,
-        "y": 388,
+        "x": 1358,
+        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -420,70 +760,70 @@
         "h": 192
       }
     },
-    "dwarf_thrown_lifted_01": {
+    "dwarf_throw_rollup_01": {
+      "frame": {
+        "x": 1552,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_rollup_02": {
+      "frame": {
+        "x": 1746,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_rollup_03": {
+      "frame": {
+        "x": 0,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_throw_rollup_04": {
       "frame": {
         "x": 194,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_upside-down_01": {
-      "frame": {
-        "x": 388,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_overhead_01": {
-      "frame": {
-        "x": 582,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_suplex-arc_01": {
-      "frame": {
-        "x": 776,
-        "y": 388,
+        "y": 776,
         "w": 192,
         "h": 192
       },
@@ -502,128 +842,8 @@
     },
     "dwarf_thrown_headlock-bent_01": {
       "frame": {
-        "x": 970,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_tail-wrapped_01": {
-      "frame": {
-        "x": 1164,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_spin_01": {
-      "frame": {
-        "x": 1358,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_squeezed_01": {
-      "frame": {
-        "x": 1552,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_slam-impact_01": {
-      "frame": {
-        "x": 1746,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_pinned_01": {
-      "frame": {
-        "x": 0,
-        "y": 582,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_thrown_pinned-struggle_01": {
-      "frame": {
-        "x": 194,
-        "y": 582,
+        "x": 388,
+        "y": 776,
         "w": 192,
         "h": 192
       },
@@ -642,8 +862,8 @@
     },
     "dwarf_thrown_kick-out_01": {
       "frame": {
-        "x": 388,
-        "y": 582,
+        "x": 582,
+        "y": 776,
         "w": 192,
         "h": 192
       },
@@ -660,10 +880,250 @@
         "h": 192
       }
     },
-    "dwarf_portrait_select_01": {
+    "dwarf_thrown_lifted_01": {
+      "frame": {
+        "x": 776,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_overhead_01": {
+      "frame": {
+        "x": 970,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_pinned-struggle_01": {
+      "frame": {
+        "x": 1164,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_pinned_01": {
+      "frame": {
+        "x": 1358,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_slam-impact_01": {
+      "frame": {
+        "x": 1552,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_spin_01": {
+      "frame": {
+        "x": 1746,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_squeezed_01": {
+      "frame": {
+        "x": 0,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_suplex-arc_01": {
+      "frame": {
+        "x": 194,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_tail-wrapped_01": {
+      "frame": {
+        "x": 388,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_thrown_upside-down_01": {
       "frame": {
         "x": 582,
-        "y": 582,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_portrait_hurt_01": {
+      "frame": {
+        "x": 0,
+        "y": 1164,
+        "w": 160,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 160
+      }
+    },
+    "dwarf_portrait_icon_01": {
+      "frame": {
+        "x": 162,
+        "y": 1164,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      }
+    },
+    "dwarf_portrait_select_01": {
+      "frame": {
+        "x": 228,
+        "y": 1164,
         "w": 160,
         "h": 160
       },
@@ -682,8 +1142,8 @@
     },
     "dwarf_portrait_vs_01": {
       "frame": {
-        "x": 744,
-        "y": 582,
+        "x": 390,
+        "y": 1164,
         "w": 320,
         "h": 400
       },
@@ -698,46 +1158,6 @@
       "sourceSize": {
         "w": 320,
         "h": 400
-      }
-    },
-    "dwarf_portrait_icon_01": {
-      "frame": {
-        "x": 1066,
-        "y": 582,
-        "w": 64,
-        "h": 64
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 64,
-        "h": 64
-      },
-      "sourceSize": {
-        "w": 64,
-        "h": 64
-      }
-    },
-    "dwarf_portrait_hurt_01": {
-      "frame": {
-        "x": 1132,
-        "y": 582,
-        "w": 160,
-        "h": 160
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 160,
-        "h": 160
-      },
-      "sourceSize": {
-        "w": 160,
-        "h": 160
       }
     }
   },
@@ -745,8 +1165,8 @@
     "image": "dwarf_atlas-1.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1938,
-      "h": 982
+      "w": 1940,
+      "h": 1590
     },
     "scale": "1"
   }

@@ -46,6 +46,11 @@ Esc pauses (Q quits to the title).
 
 ## How it plays
 
+- **Run:** double-tap forward and keep holding it.
+- **Hitboxes:** strikes land where the art's fist, claw or tail touches the
+  opponent's body, and grabs reach as far as the hands do in the lock-up art
+  (from each wrestler's `_hitboxes.json`). Frames without boxes fall back to a
+  body-sized box, so long-reach wrestlers really do reach further.
 - **Lock-up:** GRAB next to a facing opponent. A ring shrinks; both players
   press GRAB as it closes. Better timing wins. Direction held by the winner:
   forward = signature slam, back = slam behind you (Dwarf: Keg Press, Lizard:
@@ -75,7 +80,8 @@ Esc pauses (Q quits to the title).
 ## Testing tools
 
 - **Practice** (title menu): no timer, health refills. E = random cave event,
-  1 / 2 / 3 = cave-in / spider / oil, I = frame inspector.
+  1 / 2 / 3 = cave-in / spider / oil, B = show hit/hurt/grab boxes
+  (blue body, red strike, orange grab reach), I = frame inspector.
 - **Frame inspector** (title menu, or I in practice): step through every frame
   one key press at a time with size checks. Right/Left frame, Down/Up
   animation, Space play, F next flagged frame, G idle ghost, Z zoom,

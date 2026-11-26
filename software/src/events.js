@@ -133,6 +133,7 @@ export class CaveEvents {
     const guarded = f.state === 'block' || (f.state === 'crouch' && f.animKey === 'block-crouch');
     if (guarded) {
       f.damage(3);
+      if (f.state === 'block') f.play('block-overhead', true);
       sc.fx('fx_rock-shatter', f.x, f.y - f.def.height - 10, 0.7);
       sc.callout('BLOCKED', f.x, f.y - f.def.height - 30, '#f7dab5');
       return;

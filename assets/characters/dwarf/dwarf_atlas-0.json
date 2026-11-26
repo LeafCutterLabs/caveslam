@@ -1,6 +1,6 @@
 {
   "frames": {
-    "dwarf_base_idle_01": {
+    "dwarf_base_block_01": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -20,7 +20,7 @@
         "h": 192
       }
     },
-    "dwarf_base_idle_02": {
+    "dwarf_base_block_02": {
       "frame": {
         "x": 194,
         "y": 0,
@@ -40,109 +40,9 @@
         "h": 192
       }
     },
-    "dwarf_base_walk-fwd_01": {
+    "dwarf_base_block_03": {
       "frame": {
         "x": 388,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_walk-fwd_02": {
-      "frame": {
-        "x": 582,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_walk-fwd_03": {
-      "frame": {
-        "x": 776,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_walk-fwd_04": {
-      "frame": {
-        "x": 970,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_walk-fwd_05": {
-      "frame": {
-        "x": 1164,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_walk-fwd_06": {
-      "frame": {
-        "x": 1358,
         "y": 0,
         "w": 192,
         "h": 192
@@ -162,7 +62,7 @@
     },
     "dwarf_base_crouch_01": {
       "frame": {
-        "x": 1552,
+        "x": 582,
         "y": 0,
         "w": 192,
         "h": 192
@@ -182,108 +82,8 @@
     },
     "dwarf_base_crouch_02": {
       "frame": {
-        "x": 1746,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_jump_01": {
-      "frame": {
-        "x": 0,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_jump_02": {
-      "frame": {
-        "x": 194,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_jump_03": {
-      "frame": {
-        "x": 388,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_jump_04": {
-      "frame": {
-        "x": 582,
-        "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_jump_05": {
-      "frame": {
         "x": 776,
-        "y": 194,
+        "y": 0,
         "w": 192,
         "h": 192
       },
@@ -300,10 +100,10 @@
         "h": 192
       }
     },
-    "dwarf_base_block_01": {
+    "dwarf_base_crouch_03": {
       "frame": {
         "x": 970,
-        "y": 194,
+        "y": 0,
         "w": 192,
         "h": 192
       },
@@ -320,10 +120,10 @@
         "h": 192
       }
     },
-    "dwarf_base_block_02": {
+    "dwarf_base_crouch_04": {
       "frame": {
         "x": 1164,
-        "y": 194,
+        "y": 0,
         "w": 192,
         "h": 192
       },
@@ -340,10 +140,10 @@
         "h": 192
       }
     },
-    "dwarf_base_strike-light_01": {
+    "dwarf_base_getup_01": {
       "frame": {
         "x": 1358,
-        "y": 194,
+        "y": 0,
         "w": 192,
         "h": 192
       },
@@ -360,10 +160,10 @@
         "h": 192
       }
     },
-    "dwarf_base_strike-light_02": {
+    "dwarf_base_getup_02": {
       "frame": {
         "x": 1552,
-        "y": 194,
+        "y": 0,
         "w": 192,
         "h": 192
       },
@@ -380,250 +180,30 @@
         "h": 192
       }
     },
-    "dwarf_base_strike-light_03": {
+    "dwarf_base_getup_03": {
       "frame": {
         "x": 1746,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_getup_04": {
+      "frame": {
+        "x": 0,
         "y": 194,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-heavy_01": {
-      "frame": {
-        "x": 0,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-heavy_02": {
-      "frame": {
-        "x": 194,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-heavy_03": {
-      "frame": {
-        "x": 388,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-heavy_04": {
-      "frame": {
-        "x": 582,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-heavy_05": {
-      "frame": {
-        "x": 776,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-low_01": {
-      "frame": {
-        "x": 970,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-low_02": {
-      "frame": {
-        "x": 1164,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-low_03": {
-      "frame": {
-        "x": 1358,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-low_04": {
-      "frame": {
-        "x": 1552,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-air_01": {
-      "frame": {
-        "x": 1746,
-        "y": 388,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-air_02": {
-      "frame": {
-        "x": 0,
-        "y": 582,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_strike-air_03": {
-      "frame": {
-        "x": 194,
-        "y": 582,
         "w": 192,
         "h": 192
       },
@@ -642,8 +222,8 @@
     },
     "dwarf_base_hit-high_01": {
       "frame": {
-        "x": 388,
-        "y": 582,
+        "x": 194,
+        "y": 194,
         "w": 192,
         "h": 192
       },
@@ -662,8 +242,328 @@
     },
     "dwarf_base_hit-high_02": {
       "frame": {
+        "x": 388,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_hit-high_03": {
+      "frame": {
         "x": 582,
-        "y": 582,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_hit-high_04": {
+      "frame": {
+        "x": 776,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_01": {
+      "frame": {
+        "x": 970,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_02": {
+      "frame": {
+        "x": 1164,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_03": {
+      "frame": {
+        "x": 1358,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_04": {
+      "frame": {
+        "x": 1552,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_05": {
+      "frame": {
+        "x": 1746,
+        "y": 194,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_idle_06": {
+      "frame": {
+        "x": 0,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_01": {
+      "frame": {
+        "x": 194,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_02": {
+      "frame": {
+        "x": 388,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_03": {
+      "frame": {
+        "x": 582,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_04": {
+      "frame": {
+        "x": 776,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_05": {
+      "frame": {
+        "x": 970,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_06": {
+      "frame": {
+        "x": 1164,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_07": {
+      "frame": {
+        "x": 1358,
+        "y": 388,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_jump_08": {
+      "frame": {
+        "x": 1552,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -682,8 +582,8 @@
     },
     "dwarf_base_knockdown_01": {
       "frame": {
-        "x": 776,
-        "y": 582,
+        "x": 1746,
+        "y": 388,
         "w": 192,
         "h": 192
       },
@@ -702,7 +602,7 @@
     },
     "dwarf_base_knockdown_02": {
       "frame": {
-        "x": 970,
+        "x": 0,
         "y": 582,
         "w": 192,
         "h": 192
@@ -722,7 +622,7 @@
     },
     "dwarf_base_knockdown_03": {
       "frame": {
-        "x": 1164,
+        "x": 194,
         "y": 582,
         "w": 192,
         "h": 192
@@ -742,7 +642,7 @@
     },
     "dwarf_base_knockdown_04": {
       "frame": {
-        "x": 1358,
+        "x": 388,
         "y": 582,
         "w": 192,
         "h": 192
@@ -760,9 +660,49 @@
         "h": 192
       }
     },
-    "dwarf_base_lying-up_01": {
+    "dwarf_base_ko_01": {
       "frame": {
-        "x": 1552,
+        "x": 582,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_land_01": {
+      "frame": {
+        "x": 776,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_land_02": {
+      "frame": {
+        "x": 970,
         "y": 582,
         "w": 192,
         "h": 192
@@ -782,6 +722,66 @@
     },
     "dwarf_base_lying-down_01": {
       "frame": {
+        "x": 1164,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_lying-up_01": {
+      "frame": {
+        "x": 1358,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_oil-apply_01": {
+      "frame": {
+        "x": 1552,
+        "y": 582,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_oil-apply_02": {
+      "frame": {
         "x": 1746,
         "y": 582,
         "w": 192,
@@ -800,7 +800,7 @@
         "h": 192
       }
     },
-    "dwarf_base_wall-bounce_01": {
+    "dwarf_base_oil-apply_03": {
       "frame": {
         "x": 0,
         "y": 776,
@@ -820,89 +820,9 @@
         "h": 192
       }
     },
-    "dwarf_base_wall-bounce_02": {
+    "dwarf_base_oil-apply_04": {
       "frame": {
         "x": 194,
-        "y": 776,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_wall-bounce_03": {
-      "frame": {
-        "x": 388,
-        "y": 776,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_wall-jump_01": {
-      "frame": {
-        "x": 582,
-        "y": 776,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_wall-jump_02": {
-      "frame": {
-        "x": 776,
-        "y": 776,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_wall-jump_03": {
-      "frame": {
-        "x": 970,
         "y": 776,
         "w": 192,
         "h": 192
@@ -922,7 +842,7 @@
     },
     "dwarf_base_stalactite-hang_01": {
       "frame": {
-        "x": 1164,
+        "x": 388,
         "y": 776,
         "w": 192,
         "h": 192
@@ -942,8 +862,968 @@
     },
     "dwarf_base_stalactite-hang_02": {
       "frame": {
+        "x": 582,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_stalactite-hang_03": {
+      "frame": {
+        "x": 776,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_stalactite-hang_04": {
+      "frame": {
+        "x": 970,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-air_01": {
+      "frame": {
+        "x": 1164,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-air_02": {
+      "frame": {
         "x": 1358,
         "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-air_03": {
+      "frame": {
+        "x": 1552,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-heavy_01": {
+      "frame": {
+        "x": 1746,
+        "y": 776,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-heavy_02": {
+      "frame": {
+        "x": 0,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-heavy_03": {
+      "frame": {
+        "x": 194,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-heavy_04": {
+      "frame": {
+        "x": 388,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-heavy_05": {
+      "frame": {
+        "x": 582,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-light_01": {
+      "frame": {
+        "x": 776,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-light_02": {
+      "frame": {
+        "x": 970,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-light_03": {
+      "frame": {
+        "x": 1164,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-low_01": {
+      "frame": {
+        "x": 1358,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-low_02": {
+      "frame": {
+        "x": 1552,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-low_03": {
+      "frame": {
+        "x": 1746,
+        "y": 970,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_strike-low_04": {
+      "frame": {
+        "x": 0,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_turn_01": {
+      "frame": {
+        "x": 194,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_turn_02": {
+      "frame": {
+        "x": 388,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_turn_03": {
+      "frame": {
+        "x": 582,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_01": {
+      "frame": {
+        "x": 776,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_02": {
+      "frame": {
+        "x": 970,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_03": {
+      "frame": {
+        "x": 1164,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_04": {
+      "frame": {
+        "x": 1358,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_05": {
+      "frame": {
+        "x": 1552,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_06": {
+      "frame": {
+        "x": 1746,
+        "y": 1164,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_07": {
+      "frame": {
+        "x": 0,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_08": {
+      "frame": {
+        "x": 194,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_09": {
+      "frame": {
+        "x": 388,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-back_10": {
+      "frame": {
+        "x": 582,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_01": {
+      "frame": {
+        "x": 776,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_02": {
+      "frame": {
+        "x": 970,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_03": {
+      "frame": {
+        "x": 1164,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_04": {
+      "frame": {
+        "x": 1358,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_05": {
+      "frame": {
+        "x": 1552,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_06": {
+      "frame": {
+        "x": 1746,
+        "y": 1358,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_07": {
+      "frame": {
+        "x": 0,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_08": {
+      "frame": {
+        "x": 194,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_09": {
+      "frame": {
+        "x": 388,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_walk-fwd_10": {
+      "frame": {
+        "x": 582,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-bounce_01": {
+      "frame": {
+        "x": 776,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-bounce_02": {
+      "frame": {
+        "x": 970,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-bounce_03": {
+      "frame": {
+        "x": 1164,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-jump_01": {
+      "frame": {
+        "x": 1358,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-jump_02": {
+      "frame": {
+        "x": 1552,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-jump_03": {
+      "frame": {
+        "x": 1746,
+        "y": 1552,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-jump_04": {
+      "frame": {
+        "x": 0,
+        "y": 1746,
+        "w": 192,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      }
+    },
+    "dwarf_base_wall-jump_05": {
+      "frame": {
+        "x": 194,
+        "y": 1746,
         "w": 192,
         "h": 192
       },
@@ -962,8 +1842,8 @@
     },
     "dwarf_base_win_01": {
       "frame": {
-        "x": 1552,
-        "y": 776,
+        "x": 388,
+        "y": 1746,
         "w": 192,
         "h": 192
       },
@@ -982,8 +1862,8 @@
     },
     "dwarf_base_win_02": {
       "frame": {
-        "x": 1746,
-        "y": 776,
+        "x": 582,
+        "y": 1746,
         "w": 192,
         "h": 192
       },
@@ -1002,8 +1882,8 @@
     },
     "dwarf_base_win_03": {
       "frame": {
-        "x": 0,
-        "y": 970,
+        "x": 776,
+        "y": 1746,
         "w": 192,
         "h": 192
       },
@@ -1022,528 +1902,8 @@
     },
     "dwarf_base_win_04": {
       "frame": {
-        "x": 194,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_ko_01": {
-      "frame": {
-        "x": 388,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_lockup_01": {
-      "frame": {
-        "x": 582,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_lockup_02": {
-      "frame": {
-        "x": 776,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_lockup_03": {
-      "frame": {
         "x": 970,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-behind_01": {
-      "frame": {
-        "x": 1164,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-behind_02": {
-      "frame": {
-        "x": 1358,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-behind_03": {
-      "frame": {
-        "x": 1552,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-ground_01": {
-      "frame": {
-        "x": 1746,
-        "y": 970,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-ground_02": {
-      "frame": {
-        "x": 0,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_grab-ground_03": {
-      "frame": {
-        "x": 194,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_hold-struggle_01": {
-      "frame": {
-        "x": 388,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_hold-struggle_02": {
-      "frame": {
-        "x": 582,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_pin_01": {
-      "frame": {
-        "x": 776,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_pin_02": {
-      "frame": {
-        "x": 970,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_pin-hold_01": {
-      "frame": {
-        "x": 1164,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_pin-hold_02": {
-      "frame": {
-        "x": 1358,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_reversal_01": {
-      "frame": {
-        "x": 1552,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_reversal_02": {
-      "frame": {
-        "x": 1746,
-        "y": 1164,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_reversal_03": {
-      "frame": {
-        "x": 0,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_reversal_04": {
-      "frame": {
-        "x": 194,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_oil-apply_01": {
-      "frame": {
-        "x": 388,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_oil-apply_02": {
-      "frame": {
-        "x": 582,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_oil-apply_03": {
-      "frame": {
-        "x": 776,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_base_oil-apply_04": {
-      "frame": {
-        "x": 970,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_slip_01": {
-      "frame": {
-        "x": 1164,
-        "y": 1358,
-        "w": 192,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 192,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 192,
-        "h": 192
-      }
-    },
-    "dwarf_grab_slip_02": {
-      "frame": {
-        "x": 1358,
-        "y": 1358,
+        "y": 1746,
         "w": 192,
         "h": 192
       },
@@ -1565,8 +1925,8 @@
     "image": "dwarf_atlas-0.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1938,
-      "h": 1550
+      "w": 1940,
+      "h": 1940
     },
     "scale": "1"
   }
